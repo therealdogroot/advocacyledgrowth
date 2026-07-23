@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Chapter 11: Measurement That Matters — Advocacy-Led Growth</title>
+<meta name="description" content="The metrics that tell you whether it's working. From The Advocacy Operating System, Second Edition — free to read.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #FFFCF7; color: #1A1A1A; font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 18px; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+a { color: #E85D04; text-decoration: none; transition: color 0.2s; }
+a:hover { color: #D45200; }
+@media (max-width: 900px) { .toc-sidebar { display: none !important; } }
+@media (max-width: 768px) { body { font-size: 16px; } }
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Measurement That Matters","alternativeHeadline":"Chapter 11: Measurement That Matters of The Advocacy Operating System","author":{"@type":"Person","name":"Brian De Groodt"},"isPartOf":{"@type":"Book","name":"The Advocacy Operating System","bookEdition":"Second Edition"},"datePublished":"2026-07","inLanguage":"en","description":"The metrics that tell you whether it's working."},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Advocacy-Led Growth","item":"https://advocacyledgrowth.com/"},{"@type":"ListItem","position":2,"name":"Chapters","item":"https://advocacyledgrowth.com/#contents"},{"@type":"ListItem","position":3,"name":"Chapter 11: Measurement That Matters"}]}]}
+</script>
+</helmet>
+<div style="min-height: 100vh; display: flex; flex-direction: column;">
+  <div style="position: fixed; top: 0; left: 0; height: 3px; background: #E85D04; z-index: 200; width: {{ progressPct }}; transition: width 0.1s linear;"></div>
+  <nav style="padding: 1.25rem 2rem; border-bottom: 1px solid #E5E0D8; background: rgba(255,252,247,0.95); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 100;">
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem;">
+      <a href="Home.dc.html" style="font-family: Georgia, serif; font-weight: 700; font-size: 1.15rem; color: #1A1A1A;">Advocacy-Led Growth</a>
+      <a href="Home.dc.html#download" style="background: transparent; color: #E85D04; padding: 0.5rem 1rem; font-size: 0.875rem; font-weight: 500; border: 1px solid #E85D04; border-radius: 4px; transition: background 0.2s, color 0.2s;" style-hover="background: #E85D04; color: #FFFFFF;">Get the PDF</a>
+    </div>
+  </nav>
+
+  <div style="max-width: 1100px; margin: 0 auto; width: 100%; box-sizing: border-box; padding: 0 2rem; display: flex; gap: 4rem; align-items: flex-start;">
+    <aside class="toc-sidebar" style="position: sticky; top: 6rem; width: 240px; flex-shrink: 0; padding: 3rem 0; max-height: calc(100vh - 6rem); overflow-y: auto;">
+      <p style="margin: 0 0 1.25rem; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #E85D04;">Contents</p>
+      <div style="display: flex; flex-direction: column; gap: 0.65rem;">
+        <sc-for list="{{ toc }}" as="t" hint-placeholder-count="8">
+          <div>
+            <sc-if value="{{ t.current }}" hint-placeholder-val="{{ false }}">
+              <span style="display: block; font-size: 0.85rem; font-weight: 600; color: #1A1A1A; border-left: 3px solid #E85D04; padding-left: 0.75rem; line-height: 1.4;">{{ t.label }}</span>
+            </sc-if>
+            <sc-if value="{{ t.linked }}" hint-placeholder-val="{{ false }}">
+              <a href="{{ t.href }}" style="display: block; font-size: 0.85rem; color: #5A5A5A; padding-left: calc(0.75rem + 3px); line-height: 1.4;" style-hover="color: #1A1A1A;">{{ t.label }}</a>
+            </sc-if>
+            <sc-if value="{{ t.upcoming }}" hint-placeholder-val="{{ true }}">
+              <span style="display: block; font-size: 0.85rem; color: #5A5A5A; opacity: 0.55; padding-left: calc(0.75rem + 3px); line-height: 1.4;">{{ t.label }}</span>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+    </aside>
+
+    <article style="max-width: 720px; min-width: 0; padding: 3rem 0 4rem;">
+      <p style="margin: 0 0 2.5rem; font-size: 0.8rem; color: #5A5A5A;"><a href="Home.dc.html" style="color: #5A5A5A;" style-hover="color: #1A1A1A;">Home</a> <span style="margin: 0 0.4rem;">/</span> <a href="Home.dc.html#contents" style="color: #5A5A5A;" style-hover="color: #1A1A1A;">Chapters</a> <span style="margin: 0 0.4rem;">/</span> <span style="color: #1A1A1A;">Chapter 11</span></p>
+      <p style="margin: 0 0 1rem; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #E85D04;">Chapter 11</p>
+      <h1 style="margin: 0 0 1.25rem; font-family: Fraunces, Georgia, serif; font-size: 3.25rem; font-weight: 700; line-height: 1.12; letter-spacing: -0.025em; text-wrap: pretty;">Measurement That Matters</h1>
+      <p style="margin: 0 0 1.5rem; font-size: 1.15rem; line-height: 1.65; color: #5A5A5A; font-family: Fraunces, Georgia, serif; font-style: italic;">The metrics that tell you whether it's working.</p>
+      <p style="margin: 0 0 3rem; padding-bottom: 2.5rem; border-bottom: 1px solid #E5E0D8; font-size: 0.85rem; color: #5A5A5A;">By <strong style="color: #1A1A1A; font-weight: 600;">Brian De Groodt</strong> · 4 min read · From <em>The Advocacy Operating System</em>, Second Edition</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Measurement is what separates ALG from "we do some customer advocacy stuff." Without rigorous tracking, advocacy is a vibe. With it, it's a channel that can earn and defend its budget.</p>
+      <h2 style="margin: 3rem 0 1.25rem; font-family: Fraunces, Georgia, serif; font-size: 1.75rem; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25;">Leading indicators</h2>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Leading indicators tell you whether the program is healthy and active. These are the metrics you monitor weekly.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;"><strong style="font-weight: 600;">Active advocates.</strong> The number of enrolled advocates who have published at least one piece of content in the last 30 days. This is your roster health metric. If it's declining, something about the program isn't working for advocates.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;"><strong style="font-weight: 600;">Content velocity.</strong> The total number of pieces published per month across all advocates. This tells you whether the program is producing at a sustainable rate. There's no universal benchmark here because it depends on your cohort size and program maturity.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;"><strong style="font-weight: 600;">Brief pickup rate.</strong> The percentage of available briefs that at least one advocate chooses to create from. This measures whether your briefs are inspiring. If pickup rates are low, the briefs need to be more interesting or relevant. This is a signal about the quality of your prompts, never a completion rate to enforce.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;"><strong style="font-weight: 600;">Review turnaround.</strong> The average time from content submission to approval or feedback. If this exceeds 24 hours consistently, you're creating friction that kills momentum. Fast turnaround is one of the most important operational metrics in the program.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;"><strong style="font-weight: 600;">Advocate satisfaction.</strong> Measured through periodic surveys. Are advocates enjoying the program? Is compensation fair? Are briefs useful? Would they recommend the program to a peer? An advocate NPS above 50 indicates a healthy program.</p>
+      <h2 style="margin: 3rem 0 1.25rem; font-family: Fraunces, Georgia, serif; font-size: 1.75rem; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25;">Lagging indicators</h2>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Lagging indicators measure the business impact of the program. They're reported monthly and build the ROI case over time.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;"><strong style="font-weight: 600;">Total impressions.</strong> Aggregate impressions across all advocate content. This is your reach metric. For context, benchmark it against what equivalent reach would cost through paid advertising.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;"><strong style="font-weight: 600;">Engagement rate.</strong> Average likes, comments, and shares per post, expressed as a percentage of impressions. Advocate content on LinkedIn should meaningfully outperform company page content on this metric. If it doesn't, something about the content or the advocates isn't landing.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;"><strong style="font-weight: 600;">Earned media value.</strong> The equivalent cost of generating the same impressions and engagement through paid channels. Use conservative CPM benchmarks to keep this number defensible. This is the metric that finance teams understand.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;"><strong style="font-weight: 600;">Pipeline influence.</strong> Deals where the prospect engaged with advocate content before or during the buying process. This is the hardest metric to track and the most important. It requires sales team collaboration, CRM integration, and a willingness to accept that attribution in B2B is never perfectly clean. Track it from Month 3 onward. It gets more meaningful over time.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;"><strong style="font-weight: 600;">Inbound attribution.</strong> Leads or demo requests where the prospect specifically cites advocate content, peer recommendations, or advocate referrals as a source. Add "customer recommendation or LinkedIn post" as an option on your demo request form. You'll be surprised how often it gets selected.</p>
+      <h2 style="margin: 3rem 0 1.25rem; font-family: Fraunces, Georgia, serif; font-size: 1.75rem; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25;">Building a pipeline influence tracking system</h2>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Pipeline influence is the metric that matters most for justifying ALG investment, and it's the hardest to measure cleanly. Here is a practical approach that balances rigor with realism.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Start with self-reported attribution. Add a field to your demo request form, your CRM's lead source taxonomy, or your sales intake process that captures how the prospect heard about you. Include options like "customer recommendation," "saw a LinkedIn post from a customer," "peer referral," and "heard about you in a Slack community." These self-reported signals are imperfect but directionally valuable. Over time, they create a pattern that is hard to dismiss.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Layer in sales-reported touchpoints. Train your AEs to ask, during discovery or later in the sales process, whether the prospect has encountered any customer content about your product. "Have you come across any of our customers talking about us?" is a natural question that most prospects will answer honestly. When a prospect says "actually, I saw a post from [advocate name] on LinkedIn last month and that's what got me curious," log it. Those data points are gold.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Track engagement data where possible. If you're running Thought Leader Ads, you have Campaign Manager data showing who saw and clicked on advocate content. If an advocate's post includes a link with UTM parameters, you can track downstream behavior. If you're using an ABM platform, you may be able to match LinkedIn engagement data back to target accounts.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Accept that your attribution will be imperfect and build the case anyway. In B2B, the buying journey is long, nonlinear, and influenced by dozens of touchpoints across months. No single-touch attribution model will capture the full impact of advocacy. What you're building is a body of evidence: self-reported signals, sales-reported touchpoints, engagement data, and deal-level anecdotes that together tell a story about how advocacy content is warming your pipeline.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">The bar is not mathematical proof. The bar is: does the evidence make it clear that advocate content is influencing buyer behavior in ways that justify the program's cost? If the dynamics described in this book hold, a well-run program should clear that bar by Month 6. That's the standard I'd hold any program to, including ours.</p>
+      <div style="margin: 3rem 0; background: #FFFFFF; border: 1px solid #E5E0D8; border-left: 4px solid #E85D04; border-radius: 0 8px 8px 0; padding: 2rem 2.5rem;">
+        <p style="margin: 0 0 1rem; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #E85D04;">Key takeaways</p>
+        <ul style="margin: 0; padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.65rem; font-size: 0.95rem; color: #1A1A1A;">
+          <li>Without rigorous tracking, advocacy is a vibe. With it, it's a channel that can earn and defend its budget.</li>
+          <li>Leading indicators: active advocates, content volume, reach and engagement with your ICP.</li>
+          <li>Lagging indicators: pipeline influenced, deal velocity, and win rates on advocacy-touched deals.</li>
+          <li>Build a pipeline influence tracking system — self-reported attribution plus exposure matching.</li>
+        </ul>
+      </div>
+
+      <div style="margin-top: 3rem; padding-top: 2.5rem; border-top: 1px solid #E5E0D8; display: flex; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap;">
+        <a href="Chapter 10 - The Four Functions.dc.html" style="color: #1A1A1A;" style-hover="color: #E85D04;">
+          <p style="margin: 0 0 0.25rem; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #E85D04;">← Previous</p>
+          <p style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: 1.1rem;">Chapter 10: The Four Functions</p>
+        </a>
+        <a href="Chapter 12 - ALG Alongside PLG and SLG.dc.html" style="text-align: right; color: #1A1A1A;" style-hover="color: #E85D04;">
+          <p style="margin: 0 0 0.25rem; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #E85D04;">Next →</p>
+          <p style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: 1.1rem;">Chapter 12: ALG Alongside PLG and SLG</p>
+        </a>
+      </div>
+
+      <div style="margin-top: 3rem; background: #FFFFFF; border: 1px solid #E5E0D8; border-radius: 8px; padding: 2rem 2.5rem;">
+        <h2 style="margin: 0 0 0.6rem; font-family: Fraunces, Georgia, serif; font-size: 1.25rem; font-weight: 600;">Read the whole book offline</h2>
+        <p style="margin: 0 0 1.5rem; font-size: 0.9rem; color: #5A5A5A; text-wrap: pretty;">Enter your email and we'll send the complete book as a PDF — one email, no newsletter.</p>
+        <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+          <form onSubmit="{{ submitEmail }}" style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <input type="email" required="required" placeholder="you@company.com" value="{{ email }}" onChange="{{ setEmail }}" style="flex: 1; min-width: 200px; background: #FFFFFF; border: 1px solid #E5E0D8; border-radius: 6px; padding: 0.75rem 1rem; font-size: 0.95rem; color: #1A1A1A; font-family: Inter, sans-serif; outline: none; transition: border-color 0.2s, box-shadow 0.2s;" style-focus="border-color: #E85D04; box-shadow: 0 0 0 3px rgba(232,93,4,0.1);">
+            <button type="submit" style="background: #E85D04; color: #FFFFFF; padding: 0.75rem 1.75rem; font-size: 0.95rem; font-weight: 600; border: none; border-radius: 6px; cursor: pointer; font-family: Inter, sans-serif; transition: background 0.2s, transform 0.2s, box-shadow 0.2s;" style-hover="background: #D45200; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(232,93,4,0.3);">Send me the PDF</button>
+          </form>
+        </sc-if>
+        <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+          <p style="margin: 0; font-weight: 600; color: #E85D04; font-size: 0.95rem;">Check your inbox — the PDF is on its way.</p>
+        </sc-if>
+      </div>
+    </article>
+  </div>
+
+  <footer style="margin-top: auto; padding: 3rem 2rem; border-top: 1px solid #E5E0D8;">
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: baseline; gap: 1.5rem; flex-wrap: wrap;">
+      <p style="margin: 0; font-size: 0.8rem; color: #5A5A5A;">© 2026 advocacyledgrowth.com · <em>The Advocacy Operating System</em>, Second Edition</p>
+      <p style="margin: 0; font-size: 0.8rem; color: #5A5A5A;">An educational project by the team at <a href="https://kindlinghq.com" style="color: #5A5A5A; text-decoration: underline;" style-hover="color: #1A1A1A;">Kindling</a></p>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showSidebar&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;}}">
+class Component extends DCLogic {
+  state = { email: '', submitted: false, progress: 0 };
+  componentDidMount() {
+    this.onScroll = () => {
+      const h = document.documentElement;
+      const max = h.scrollHeight - h.clientHeight;
+      this.setState({ progress: max > 0 ? Math.min(100, (h.scrollTop / max) * 100) : 0 });
+    };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+  }
+  componentWillUnmount() { window.removeEventListener('scroll', this.onScroll); }
+  renderVals() {
+    const showSidebar = this.props.showSidebar ?? true;
+    const CURRENT = 11;
+    const entries = [
+      ['Foreword', 'Foreword.dc.html'],
+      ['1 · The Trust Shift', 'Chapter 1 - The Trust Shift.dc.html'],
+      ['2 · How We Got Here', 'Chapter 2 - How We Got Here.dc.html'],
+      ['3 · What Is Advocacy-Led Growth', 'Chapter 3 - What Is Advocacy-Led Growth.dc.html'],
+      ['4 · The Three Pillars', 'Chapter 4 - The Three Pillars.dc.html'],
+      ['5 · The Organic Principle', 'Chapter 5 - The Organic Principle.dc.html'],
+      ['6 · Who Creates the Content', 'Chapter 6 - Who Creates the Content.dc.html'],
+      ['7 · The Economics', 'Chapter 7 - The Economics.dc.html'],
+      ['8 · Amplification', 'Chapter 8 - Amplification.dc.html'],
+      ['9 · Building the System', 'Chapter 9 - Building the System.dc.html'],
+      ['10 · The Four Functions', 'Chapter 10 - The Four Functions.dc.html'],
+      ['11 · Measurement That Matters', 'Chapter 11 - Measurement That Matters.dc.html'],
+      ['12 · ALG Alongside PLG and SLG', 'Chapter 12 - ALG Alongside PLG and SLG.dc.html'],
+      ['13 · The Compounding Effect', 'Chapter 13 - The Compounding Effect.dc.html'],
+      ['13\u00BD · What Goes Wrong', 'Chapter 13.5 - What Goes Wrong.dc.html'],
+      ['14 · Getting Started', 'Chapter 14 - Getting Started.dc.html'],
+      ['15 · The Future of B2B Growth', 'Chapter 15 - The Future of B2B Growth.dc.html'],
+      ['Afterword', 'Afterword.dc.html'],
+      ['Notes', 'Notes.dc.html']
+    ];
+    const toc = showSidebar ? entries.map(([label, href], i) => ({
+      label,
+      href,
+      current: i === CURRENT,
+      linked: i !== CURRENT,
+      upcoming: false
+    })) : [];
+    return {
+      toc,
+      progressPct: this.state.progress.toFixed(1) + '%',
+      email: this.state.email,
+      notSubmitted: !this.state.submitted,
+      submitted: this.state.submitted,
+      setEmail: (e) => this.setState({ email: e.target.value }),
+      submitEmail: (e) => {
+        e.preventDefault();
+        try { localStorage.setItem('alg-pdf-email', this.state.email); } catch (err) {}
+        this.setState({ submitted: true });
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>

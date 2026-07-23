@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Chapter 10: The Four Functions — Advocacy-Led Growth</title>
+<meta name="description" content="The operational anatomy of every advocacy program, whether you build it or buy it. From The Advocacy Operating System, Second Edition — free to read.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #FFFCF7; color: #1A1A1A; font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 18px; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+a { color: #E85D04; text-decoration: none; transition: color 0.2s; }
+a:hover { color: #D45200; }
+@media (max-width: 900px) { .toc-sidebar { display: none !important; } }
+@media (max-width: 768px) { body { font-size: 16px; } }
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"The Four Functions","alternativeHeadline":"Chapter 10: The Four Functions of The Advocacy Operating System","author":{"@type":"Person","name":"Brian De Groodt"},"isPartOf":{"@type":"Book","name":"The Advocacy Operating System","bookEdition":"Second Edition"},"datePublished":"2026-07","inLanguage":"en","description":"The operational anatomy of every advocacy program, whether you build it or buy it."},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Advocacy-Led Growth","item":"https://advocacyledgrowth.com/"},{"@type":"ListItem","position":2,"name":"Chapters","item":"https://advocacyledgrowth.com/#contents"},{"@type":"ListItem","position":3,"name":"Chapter 10: The Four Functions"}]}]}
+</script>
+</helmet>
+<div style="min-height: 100vh; display: flex; flex-direction: column;">
+  <div style="position: fixed; top: 0; left: 0; height: 3px; background: #E85D04; z-index: 200; width: {{ progressPct }}; transition: width 0.1s linear;"></div>
+  <nav style="padding: 1.25rem 2rem; border-bottom: 1px solid #E5E0D8; background: rgba(255,252,247,0.95); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 100;">
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem;">
+      <a href="Home.dc.html" style="font-family: Georgia, serif; font-weight: 700; font-size: 1.15rem; color: #1A1A1A;">Advocacy-Led Growth</a>
+      <a href="Home.dc.html#download" style="background: transparent; color: #E85D04; padding: 0.5rem 1rem; font-size: 0.875rem; font-weight: 500; border: 1px solid #E85D04; border-radius: 4px; transition: background 0.2s, color 0.2s;" style-hover="background: #E85D04; color: #FFFFFF;">Get the PDF</a>
+    </div>
+  </nav>
+
+  <div style="max-width: 1100px; margin: 0 auto; width: 100%; box-sizing: border-box; padding: 0 2rem; display: flex; gap: 4rem; align-items: flex-start;">
+    <aside class="toc-sidebar" style="position: sticky; top: 6rem; width: 240px; flex-shrink: 0; padding: 3rem 0; max-height: calc(100vh - 6rem); overflow-y: auto;">
+      <p style="margin: 0 0 1.25rem; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #E85D04;">Contents</p>
+      <div style="display: flex; flex-direction: column; gap: 0.65rem;">
+        <sc-for list="{{ toc }}" as="t" hint-placeholder-count="8">
+          <div>
+            <sc-if value="{{ t.current }}" hint-placeholder-val="{{ false }}">
+              <span style="display: block; font-size: 0.85rem; font-weight: 600; color: #1A1A1A; border-left: 3px solid #E85D04; padding-left: 0.75rem; line-height: 1.4;">{{ t.label }}</span>
+            </sc-if>
+            <sc-if value="{{ t.linked }}" hint-placeholder-val="{{ false }}">
+              <a href="{{ t.href }}" style="display: block; font-size: 0.85rem; color: #5A5A5A; padding-left: calc(0.75rem + 3px); line-height: 1.4;" style-hover="color: #1A1A1A;">{{ t.label }}</a>
+            </sc-if>
+            <sc-if value="{{ t.upcoming }}" hint-placeholder-val="{{ true }}">
+              <span style="display: block; font-size: 0.85rem; color: #5A5A5A; opacity: 0.55; padding-left: calc(0.75rem + 3px); line-height: 1.4;">{{ t.label }}</span>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+    </aside>
+
+    <article style="max-width: 720px; min-width: 0; padding: 3rem 0 4rem;">
+      <p style="margin: 0 0 2.5rem; font-size: 0.8rem; color: #5A5A5A;"><a href="Home.dc.html" style="color: #5A5A5A;" style-hover="color: #1A1A1A;">Home</a> <span style="margin: 0 0.4rem;">/</span> <a href="Home.dc.html#contents" style="color: #5A5A5A;" style-hover="color: #1A1A1A;">Chapters</a> <span style="margin: 0 0.4rem;">/</span> <span style="color: #1A1A1A;">Chapter 10</span></p>
+      <p style="margin: 0 0 1rem; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #E85D04;">Chapter 10</p>
+      <h1 style="margin: 0 0 1.25rem; font-family: Fraunces, Georgia, serif; font-size: 3.25rem; font-weight: 700; line-height: 1.12; letter-spacing: -0.025em; text-wrap: pretty;">The Four Functions</h1>
+      <p style="margin: 0 0 1.5rem; font-size: 1.15rem; line-height: 1.65; color: #5A5A5A; font-family: Fraunces, Georgia, serif; font-style: italic;">The operational anatomy of every advocacy program, whether you build it or buy it.</p>
+      <p style="margin: 0 0 3rem; padding-bottom: 2.5rem; border-bottom: 1px solid #E5E0D8; font-size: 0.85rem; color: #5A5A5A;">By <strong style="color: #1A1A1A; font-weight: 600;">Brian De Groodt</strong> · 5 min read · From <em>The Advocacy Operating System</em>, Second Edition</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Chapter 9 described building an ALG program as a sequence of phases: foundation, recruitment, activation, optimization, ownership. That's the right way to think about time. This chapter describes the same program a different way: as a set of functions that have to run continuously once the program is live.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">I think of these as the four functions of advocacy-led growth. Every working ALG program performs all four, whether it's run on purpose-built software, a consulting engagement, or a spreadsheet and a Venmo account. If your program is underperforming, the diagnosis almost always comes down to one of these four functions being weak or missing. And if you're evaluating tools or partners, this is the checklist to evaluate them against.</p>
+      <h2 style="margin: 3rem 0 1.25rem; font-family: Fraunces, Georgia, serif; font-size: 1.75rem; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25;">Function 1: source and verify</h2>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">The first function finds the right advocates and confirms they're real.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Sourcing is the discovery work: identifying which of your customers fit the ideal advocate profile from Chapter 9. Who uses the product regularly? Who works in roles your buyers identify with? Who already posts about their work, even occasionally? Who has an audience that overlaps with your ICP? The raw material for this lives in your CRM, your product usage data, your CS team's heads, and public social platforms. The sourcing function pulls it together into a ranked list of candidates worth a warm conversation.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Verification is what separates ALG from everything else in the influencer-adjacent world. Before an advocate creates a single piece of content, their customer status gets confirmed: they work at a customer account, they use the product, their experience is real. This sounds like paperwork. It's actually the credibility mechanism for the entire channel. When a buyer asks "is this person a real customer or a paid promoter?", verification is what lets the honest answer be the good answer.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">What breaks without this function: you recruit the wrong people, or worse, people whose customer status is ambiguous. The content might still get engagement, but the moment a buyer or a competitor pokes at the credibility of your advocates and finds it soft, the channel is damaged in a way that's hard to repair.</p>
+      <h2 style="margin: 3rem 0 1.25rem; font-family: Fraunces, Georgia, serif; font-size: 1.75rem; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25;">Function 2: activate and produce</h2>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">The second function turns willing advocates into a steady stream of content, without ever crossing into assignment.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">This is where the organic principle from Chapter 5 gets operationalized. Activation covers onboarding (guidelines, rate card, disclosure requirements, how the process works), the brief library that gives advocates optional starting points, and the ongoing relationship work that keeps advocates feeling valued rather than managed. Production covers the mechanics around each piece of content: submission, the 24-hour review for accuracy and FTC compliance, approval, publication, and prompt, transparent payment.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">The activation function has a paradox at its center. Its job is to increase content volume, and every obvious lever for increasing content volume (deadlines, quotas, nudges, leaderboards) destroys the thing that makes the content valuable. So the function works entirely through pull: better briefs, faster review, fairer pay, easier process, genuine recognition. When volume is low, this function's job is to fix the program, never to fix the advocates.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">What breaks without this function: you have verified advocates and nothing happening. Enthusiasm without infrastructure produces a trickle of sporadic content, long review delays, awkward payment logistics, and advocates who quietly disengage because participating feels like work.</p>
+      <h2 style="margin: 3rem 0 1.25rem; font-family: Fraunces, Georgia, serif; font-size: 1.75rem; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25;">Function 3: distribute</h2>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">The third function gets the content in front of the buyers who need to see it.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Organic publication is the foundation: the advocate posts to their own profile, in their own voice, and their network sees it. Distribution as a function goes further. It includes the amplification layer from Chapter 8: identifying the top-performing organic posts, getting the advocate's permission, and running them as Thought Leader Ads targeted at your ICP. It includes repurposing, with permission: an advocate's post becoming a quote in a newsletter, a slide in a webinar, a testimonial on a landing page. And it includes the internal distribution most programs forget: making advocate content findable by your own sales team, tagged by persona and use case, so an AE working a deal can surface a relevant peer voice at the right moment.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Distribution is also where machine readability enters the picture, a topic I take up properly in Chapter 15. Advocate content that is public and indexable does double duty: it reaches human buyers in the feed today and remains retrievable by the AI research tools those buyers increasingly use tomorrow.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">What breaks without this function: great content that nobody sees. The advocate's 900 connections see the post, a screenshot ends up in a slide deck, and the story ends. The content existed. The channel didn't.</p>
+      <h2 style="margin: 3rem 0 1.25rem; font-family: Fraunces, Georgia, serif; font-size: 1.75rem; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25;">Function 4: measure and attribute</h2>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">The fourth function proves the program is working, in language the rest of the company accepts.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Measurement covers the program health metrics and business impact metrics detailed in Chapter 11: active advocates, content velocity, review turnaround, impressions, engagement, earned media value. Attribution is the harder half: connecting advocate content to pipeline through self-reported sources, sales-reported touchpoints, and engagement data, and assembling those imperfect signals into a preponderance-of-evidence case.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">This function exists because advocacy competes for budget against channels with cleaner attribution. A paid campaign can draw a straight line from click to demo request. Advocacy influences buyers in places you can't instrument: a post read three months before the buying cycle started, a name remembered from a feed. The measurement function's job is to make that influence visible enough to defend the budget, without pretending the attribution is cleaner than it is.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">What breaks without this function: the program works and nobody can prove it. This is the slow death described in Chapter 13½. The channel generating real pipeline influence loses the budget fight to the channel generating clean dashboards.</p>
+      <h2 style="margin: 3rem 0 1.25rem; font-family: Fraunces, Georgia, serif; font-size: 1.75rem; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25;">Using the four functions</h2>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Three practical uses for this model.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">As a diagnostic: when a program stalls, walk the four functions in order. Is the advocate pool right and verified? Is the activation machinery producing without pressuring? Is the content actually being distributed beyond the advocates' own networks? Is the impact being measured in terms finance respects? The weak function is usually obvious once you look at each one separately.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">As a build-vs-buy lens: you can run all four functions manually at pilot scale. A spreadsheet handles sourcing. Email handles activation. Manual posting handles distribution. A monthly report handles measurement. What software buys you is the ability to run all four at once, reliably, as the advocate count grows, without the program depending on one heroic operator. Evaluate any platform, Kindling included, on how well it performs these four functions, because a tool that only does one or two of them leaves you running the rest by hand.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">As an organizational map: the four functions cut across teams. Sourcing leans on CS and RevOps. Activation leans on marketing. Distribution touches paid media and sales enablement. Measurement touches sales and finance. This is why Chapter 12 argues the program has to sit with someone who has cross-functional authority. The functions don't respect departmental lines, and a program siloed in one department will run at most two of the four well.</p>
+      <div style="margin: 3rem 0; background: #FFFFFF; border: 1px solid #E5E0D8; border-left: 4px solid #E85D04; border-radius: 0 8px 8px 0; padding: 2rem 2.5rem;">
+        <p style="margin: 0 0 1rem; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #E85D04;">Key takeaways</p>
+        <ul style="margin: 0; padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.65rem; font-size: 0.95rem; color: #1A1A1A;">
+          <li>Every advocacy program runs four continuous functions: source and verify, activate and produce, distribute, measure and attribute.</li>
+          <li>Phases (Chapter 9) describe time; functions describe anatomy — all four must run at once for the program to work.</li>
+          <li>Each function can be built in-house or bought, but none can be skipped.</li>
+          <li>Use the four functions as an audit: a stalled program is usually one function that quietly stopped running.</li>
+        </ul>
+      </div>
+
+      <div style="margin-top: 3rem; padding-top: 2.5rem; border-top: 1px solid #E5E0D8; display: flex; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap;">
+        <a href="Chapter 9 - Building the System.dc.html" style="color: #1A1A1A;" style-hover="color: #E85D04;">
+          <p style="margin: 0 0 0.25rem; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #E85D04;">← Previous</p>
+          <p style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: 1.1rem;">Chapter 9: Building the System</p>
+        </a>
+        <a href="Chapter 11 - Measurement That Matters.dc.html" style="text-align: right; color: #1A1A1A;" style-hover="color: #E85D04;">
+          <p style="margin: 0 0 0.25rem; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #E85D04;">Next →</p>
+          <p style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: 1.1rem;">Chapter 11: Measurement That Matters</p>
+        </a>
+      </div>
+
+      <div style="margin-top: 3rem; background: #FFFFFF; border: 1px solid #E5E0D8; border-radius: 8px; padding: 2rem 2.5rem;">
+        <h2 style="margin: 0 0 0.6rem; font-family: Fraunces, Georgia, serif; font-size: 1.25rem; font-weight: 600;">Read the whole book offline</h2>
+        <p style="margin: 0 0 1.5rem; font-size: 0.9rem; color: #5A5A5A; text-wrap: pretty;">Enter your email and we'll send the complete book as a PDF — one email, no newsletter.</p>
+        <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+          <form onSubmit="{{ submitEmail }}" style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <input type="email" required="required" placeholder="you@company.com" value="{{ email }}" onChange="{{ setEmail }}" style="flex: 1; min-width: 200px; background: #FFFFFF; border: 1px solid #E5E0D8; border-radius: 6px; padding: 0.75rem 1rem; font-size: 0.95rem; color: #1A1A1A; font-family: Inter, sans-serif; outline: none; transition: border-color 0.2s, box-shadow 0.2s;" style-focus="border-color: #E85D04; box-shadow: 0 0 0 3px rgba(232,93,4,0.1);">
+            <button type="submit" style="background: #E85D04; color: #FFFFFF; padding: 0.75rem 1.75rem; font-size: 0.95rem; font-weight: 600; border: none; border-radius: 6px; cursor: pointer; font-family: Inter, sans-serif; transition: background 0.2s, transform 0.2s, box-shadow 0.2s;" style-hover="background: #D45200; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(232,93,4,0.3);">Send me the PDF</button>
+          </form>
+        </sc-if>
+        <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+          <p style="margin: 0; font-weight: 600; color: #E85D04; font-size: 0.95rem;">Check your inbox — the PDF is on its way.</p>
+        </sc-if>
+      </div>
+    </article>
+  </div>
+
+  <footer style="margin-top: auto; padding: 3rem 2rem; border-top: 1px solid #E5E0D8;">
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: baseline; gap: 1.5rem; flex-wrap: wrap;">
+      <p style="margin: 0; font-size: 0.8rem; color: #5A5A5A;">© 2026 advocacyledgrowth.com · <em>The Advocacy Operating System</em>, Second Edition</p>
+      <p style="margin: 0; font-size: 0.8rem; color: #5A5A5A;">An educational project by the team at <a href="https://kindlinghq.com" style="color: #5A5A5A; text-decoration: underline;" style-hover="color: #1A1A1A;">Kindling</a></p>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showSidebar&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;}}">
+class Component extends DCLogic {
+  state = { email: '', submitted: false, progress: 0 };
+  componentDidMount() {
+    this.onScroll = () => {
+      const h = document.documentElement;
+      const max = h.scrollHeight - h.clientHeight;
+      this.setState({ progress: max > 0 ? Math.min(100, (h.scrollTop / max) * 100) : 0 });
+    };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+  }
+  componentWillUnmount() { window.removeEventListener('scroll', this.onScroll); }
+  renderVals() {
+    const showSidebar = this.props.showSidebar ?? true;
+    const CURRENT = 10;
+    const entries = [
+      ['Foreword', 'Foreword.dc.html'],
+      ['1 · The Trust Shift', 'Chapter 1 - The Trust Shift.dc.html'],
+      ['2 · How We Got Here', 'Chapter 2 - How We Got Here.dc.html'],
+      ['3 · What Is Advocacy-Led Growth', 'Chapter 3 - What Is Advocacy-Led Growth.dc.html'],
+      ['4 · The Three Pillars', 'Chapter 4 - The Three Pillars.dc.html'],
+      ['5 · The Organic Principle', 'Chapter 5 - The Organic Principle.dc.html'],
+      ['6 · Who Creates the Content', 'Chapter 6 - Who Creates the Content.dc.html'],
+      ['7 · The Economics', 'Chapter 7 - The Economics.dc.html'],
+      ['8 · Amplification', 'Chapter 8 - Amplification.dc.html'],
+      ['9 · Building the System', 'Chapter 9 - Building the System.dc.html'],
+      ['10 · The Four Functions', 'Chapter 10 - The Four Functions.dc.html'],
+      ['11 · Measurement That Matters', 'Chapter 11 - Measurement That Matters.dc.html'],
+      ['12 · ALG Alongside PLG and SLG', 'Chapter 12 - ALG Alongside PLG and SLG.dc.html'],
+      ['13 · The Compounding Effect', 'Chapter 13 - The Compounding Effect.dc.html'],
+      ['13\u00BD · What Goes Wrong', 'Chapter 13.5 - What Goes Wrong.dc.html'],
+      ['14 · Getting Started', 'Chapter 14 - Getting Started.dc.html'],
+      ['15 · The Future of B2B Growth', 'Chapter 15 - The Future of B2B Growth.dc.html'],
+      ['Afterword', 'Afterword.dc.html'],
+      ['Notes', 'Notes.dc.html']
+    ];
+    const toc = showSidebar ? entries.map(([label, href], i) => ({
+      label,
+      href,
+      current: i === CURRENT,
+      linked: i !== CURRENT,
+      upcoming: false
+    })) : [];
+    return {
+      toc,
+      progressPct: this.state.progress.toFixed(1) + '%',
+      email: this.state.email,
+      notSubmitted: !this.state.submitted,
+      submitted: this.state.submitted,
+      setEmail: (e) => this.setState({ email: e.target.value }),
+      submitEmail: (e) => {
+        e.preventDefault();
+        try { localStorage.setItem('alg-pdf-email', this.state.email); } catch (err) {}
+        this.setState({ submitted: true });
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>

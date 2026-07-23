@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Notes — Advocacy-Led Growth</title>
+<meta name="description" content="Sources and references. From The Advocacy Operating System, Second Edition — free to read.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #FFFCF7; color: #1A1A1A; font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 18px; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+a { color: #E85D04; text-decoration: none; transition: color 0.2s; }
+a:hover { color: #D45200; }
+@media (max-width: 900px) { .toc-sidebar { display: none !important; } }
+@media (max-width: 768px) { body { font-size: 16px; } }
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Notes","alternativeHeadline":"Notes of The Advocacy Operating System","author":{"@type":"Person","name":"Brian De Groodt"},"isPartOf":{"@type":"Book","name":"The Advocacy Operating System","bookEdition":"Second Edition"},"datePublished":"2026-07","inLanguage":"en","description":"Sources and references."},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Advocacy-Led Growth","item":"https://advocacyledgrowth.com/"},{"@type":"ListItem","position":2,"name":"Chapters","item":"https://advocacyledgrowth.com/#contents"},{"@type":"ListItem","position":3,"name":"Notes"}]}]}
+</script>
+</helmet>
+<div style="min-height: 100vh; display: flex; flex-direction: column;">
+  <div style="position: fixed; top: 0; left: 0; height: 3px; background: #E85D04; z-index: 200; width: {{ progressPct }}; transition: width 0.1s linear;"></div>
+  <nav style="padding: 1.25rem 2rem; border-bottom: 1px solid #E5E0D8; background: rgba(255,252,247,0.95); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 100;">
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem;">
+      <a href="Home.dc.html" style="font-family: Georgia, serif; font-weight: 700; font-size: 1.15rem; color: #1A1A1A;">Advocacy-Led Growth</a>
+      <a href="Home.dc.html#download" style="background: transparent; color: #E85D04; padding: 0.5rem 1rem; font-size: 0.875rem; font-weight: 500; border: 1px solid #E85D04; border-radius: 4px; transition: background 0.2s, color 0.2s;" style-hover="background: #E85D04; color: #FFFFFF;">Get the PDF</a>
+    </div>
+  </nav>
+
+  <div style="max-width: 1100px; margin: 0 auto; width: 100%; box-sizing: border-box; padding: 0 2rem; display: flex; gap: 4rem; align-items: flex-start;">
+    <aside class="toc-sidebar" style="position: sticky; top: 6rem; width: 240px; flex-shrink: 0; padding: 3rem 0; max-height: calc(100vh - 6rem); overflow-y: auto;">
+      <p style="margin: 0 0 1.25rem; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #E85D04;">Contents</p>
+      <div style="display: flex; flex-direction: column; gap: 0.65rem;">
+        <sc-for list="{{ toc }}" as="t" hint-placeholder-count="8">
+          <div>
+            <sc-if value="{{ t.current }}" hint-placeholder-val="{{ false }}">
+              <span style="display: block; font-size: 0.85rem; font-weight: 600; color: #1A1A1A; border-left: 3px solid #E85D04; padding-left: 0.75rem; line-height: 1.4;">{{ t.label }}</span>
+            </sc-if>
+            <sc-if value="{{ t.linked }}" hint-placeholder-val="{{ false }}">
+              <a href="{{ t.href }}" style="display: block; font-size: 0.85rem; color: #5A5A5A; padding-left: calc(0.75rem + 3px); line-height: 1.4;" style-hover="color: #1A1A1A;">{{ t.label }}</a>
+            </sc-if>
+            <sc-if value="{{ t.upcoming }}" hint-placeholder-val="{{ true }}">
+              <span style="display: block; font-size: 0.85rem; color: #5A5A5A; opacity: 0.55; padding-left: calc(0.75rem + 3px); line-height: 1.4;">{{ t.label }}</span>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+    </aside>
+
+    <article style="max-width: 720px; min-width: 0; padding: 3rem 0 4rem;">
+      <p style="margin: 0 0 2.5rem; font-size: 0.8rem; color: #5A5A5A;"><a href="Home.dc.html" style="color: #5A5A5A;" style-hover="color: #1A1A1A;">Home</a> <span style="margin: 0 0.4rem;">/</span> <a href="Home.dc.html#contents" style="color: #5A5A5A;" style-hover="color: #1A1A1A;">Chapters</a> <span style="margin: 0 0.4rem;">/</span> <span style="color: #1A1A1A;">Notes</span></p>
+      <p style="margin: 0 0 1rem; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #E85D04;">Notes</p>
+      <h1 style="margin: 0 0 1.25rem; font-family: Fraunces, Georgia, serif; font-size: 3.25rem; font-weight: 700; line-height: 1.12; letter-spacing: -0.025em; text-wrap: pretty;">Notes</h1>
+      <p style="margin: 0 0 1.5rem; font-size: 1.15rem; line-height: 1.65; color: #5A5A5A; font-family: Fraunces, Georgia, serif; font-style: italic;">Sources and references.</p>
+      <p style="margin: 0 0 3rem; padding-bottom: 2.5rem; border-bottom: 1px solid #E5E0D8; font-size: 0.85rem; color: #5A5A5A;">By <strong style="color: #1A1A1A; font-weight: 600;">Brian De Groodt</strong> · 2 min read · From <em>The Advocacy Operating System</em>, Second Edition</p>
+      <h3 style="margin: 2rem 0 1rem; font-family: Fraunces, Georgia, serif; font-size: 1.25rem; font-weight: 600;">Chapter 1: The trust shift</h3>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Forrester (2023). B2B Brand and Communications Survey. Findings on buyer trust in peers (90%+), vendor customers (85%), and salespeople (29%).</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Edelman and LinkedIn (2024). Reaching Beyond the Ready: 2024 B2B Thought Leadership Impact Report. Findings on thought leadership influence on purchase decisions.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">TrustRadius (2024). 2024 B2B Buying Disconnect Report. Findings on peer conversations in buying decisions and vendor-supplied references (23%).</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">G2 (2024). 2024 Buyer Behavior Report. Product review websites as most-consulted source, growing from 13% (2021) to 31% (2024).</p>
+      <h3 style="margin: 2rem 0 1rem; font-family: Fraunces, Georgia, serif; font-size: 1.25rem; font-weight: 600;">Chapter 2: How we got here</h3>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Author's professional experience across 25 years in enterprise software sales (SAP, Medallia, Cornerstone, ADP).</p>
+      <h3 style="margin: 2rem 0 1rem; font-family: Fraunces, Georgia, serif; font-size: 1.25rem; font-weight: 600;">Chapter 7: The economics</h3>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Reichheld, F., Darnell, D., and Burns, M. (2021). Net Promoter 3.0: A Better System for Understanding the Real Value of Happy Customers. Harvard Business Review, November-December 2021.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Reichheld, F. (2021). Winning on Purpose: The Unbeatable Strategy of Loving Customers. Harvard Business Review Press.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Reichheld, F. (2022). Inc. Magazine, March/April 2022. On companies with highest NPS generating total shareholder returns 2-3x market average.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">LinkedIn Advertising Benchmarks: CPM ranges ($30-$80+) and CPC ranges ($4-$12+) based on publicly available LinkedIn Campaign Manager benchmarks and industry reports.</p>
+      <h3 style="margin: 2rem 0 1rem; font-family: Fraunces, Georgia, serif; font-size: 1.25rem; font-weight: 600;">Chapter 8: Amplification</h3>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">LinkedIn Marketing Solutions, Thought Leader Ads product documentation and specifications (accessed July 2026). Eligible formats (single image, video, event, article, and newsletter posts under brand awareness or engagement objectives), ineligible formats (polls, multi-image posts, reshares), and member eligibility (employees and 1st, 2nd, or 3rd-degree connections, with member approval of each sponsorship request).</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">LinkedIn B2B Institute research on personal profile content generating 5-10x engagement versus company page content.</p>
+      <h3 style="margin: 2rem 0 1rem; font-family: Fraunces, Georgia, serif; font-size: 1.25rem; font-weight: 600;">Chapter 12: ALG alongside PLG and SLG</h3>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Edelman and LinkedIn (2025). 2025 B2B Thought Leadership Impact Report. On thought leadership as a strategic tool for building trust and reaching hidden decision-makers.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Sopro (2025). 68 B2B Buyer Statistics for 2025. On 77% of B2B buyers reading user reviews and 54% speaking with current users before purchasing.</p>
+      <h3 style="margin: 2rem 0 1rem; font-family: Fraunces, Georgia, serif; font-size: 1.25rem; font-weight: 600;">Chapter 13: The compounding effect</h3>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Frameworks and observations based on the author's analysis of advocacy program dynamics and B2B growth modeling.</p>
+      <h3 style="margin: 2rem 0 1rem; font-family: Fraunces, Georgia, serif; font-size: 1.25rem; font-weight: 600;">Chapter 15: The future of B2B growth</h3>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">TrustRadius (2024). Bridging the Trust Gap: B2B Tech Buying in the Age of AI. On 40% of buyers finding it easier to find information due to AI tools.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">G2 (2024). 2024 Buyer Behavior Report. On distrust in vendor websites increasing year over year.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Column Content (2026). 2026 Thought Leadership Statistics and Trends. On LinkedIn surpassing 1.1 billion users globally.</p>
+      <h3 style="margin: 2rem 0 1rem; font-family: Fraunces, Georgia, serif; font-size: 1.25rem; font-weight: 600;">General references</h3>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Clay (clay.com). Case study in customer-driven growth through community and user-generated content, reaching $3B valuation by 2025. Referenced as a public example of advocacy-driven growth dynamics.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Edelman Trust Barometer (2022). On 81% of consumers trusting advice from friends and family over direct brand messaging.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Nielsen research on 92% of consumers trusting recommendations from individuals over traditional brand advertisements.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">CMO Council. Better Lead Yield in the Content Marketing Field. On 87% of B2B buyers saying online content has major or moderate impact on vendor selection.</p>
+      <div style="margin: 3rem 0; border-top: 1px solid #E5E0D8;"></div>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;"><em>The Advocacy Operating System, Second Edition. Built by Kindling.</em></p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;"><em>advocacyledgrowth.com</em></p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;"><em>Credibility lives in people, not brands.</em></p>
+
+      <div style="margin-top: 3rem; padding-top: 2.5rem; border-top: 1px solid #E5E0D8; display: flex; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap;">
+        <a href="Afterword.dc.html" style="color: #1A1A1A;" style-hover="color: #E85D04;">
+          <p style="margin: 0 0 0.25rem; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #E85D04;">← Previous</p>
+          <p style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: 1.1rem;">Afterword</p>
+        </a>
+        <a href="Home.dc.html" style="color: #1A1A1A;" style="text-align: right; color: #1A1A1A;">
+          <p style="margin: 0 0 0.25rem; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5A5A5A;">Back to →</p>
+          <p style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: 1.1rem;">All chapters</p>
+        </a>
+      </div>
+
+      <div style="margin-top: 3rem; background: #FFFFFF; border: 1px solid #E5E0D8; border-radius: 8px; padding: 2rem 2.5rem;">
+        <h2 style="margin: 0 0 0.6rem; font-family: Fraunces, Georgia, serif; font-size: 1.25rem; font-weight: 600;">Read the whole book offline</h2>
+        <p style="margin: 0 0 1.5rem; font-size: 0.9rem; color: #5A5A5A; text-wrap: pretty;">Enter your email and we'll send the complete book as a PDF — one email, no newsletter.</p>
+        <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+          <form onSubmit="{{ submitEmail }}" style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <input type="email" required="required" placeholder="you@company.com" value="{{ email }}" onChange="{{ setEmail }}" style="flex: 1; min-width: 200px; background: #FFFFFF; border: 1px solid #E5E0D8; border-radius: 6px; padding: 0.75rem 1rem; font-size: 0.95rem; color: #1A1A1A; font-family: Inter, sans-serif; outline: none; transition: border-color 0.2s, box-shadow 0.2s;" style-focus="border-color: #E85D04; box-shadow: 0 0 0 3px rgba(232,93,4,0.1);">
+            <button type="submit" style="background: #E85D04; color: #FFFFFF; padding: 0.75rem 1.75rem; font-size: 0.95rem; font-weight: 600; border: none; border-radius: 6px; cursor: pointer; font-family: Inter, sans-serif; transition: background 0.2s, transform 0.2s, box-shadow 0.2s;" style-hover="background: #D45200; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(232,93,4,0.3);">Send me the PDF</button>
+          </form>
+        </sc-if>
+        <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+          <p style="margin: 0; font-weight: 600; color: #E85D04; font-size: 0.95rem;">Check your inbox — the PDF is on its way.</p>
+        </sc-if>
+      </div>
+    </article>
+  </div>
+
+  <footer style="margin-top: auto; padding: 3rem 2rem; border-top: 1px solid #E5E0D8;">
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: baseline; gap: 1.5rem; flex-wrap: wrap;">
+      <p style="margin: 0; font-size: 0.8rem; color: #5A5A5A;">© 2026 advocacyledgrowth.com · <em>The Advocacy Operating System</em>, Second Edition</p>
+      <p style="margin: 0; font-size: 0.8rem; color: #5A5A5A;">An educational project by the team at <a href="https://kindlinghq.com" style="color: #5A5A5A; text-decoration: underline;" style-hover="color: #1A1A1A;">Kindling</a></p>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showSidebar&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;}}">
+class Component extends DCLogic {
+  state = { email: '', submitted: false, progress: 0 };
+  componentDidMount() {
+    this.onScroll = () => {
+      const h = document.documentElement;
+      const max = h.scrollHeight - h.clientHeight;
+      this.setState({ progress: max > 0 ? Math.min(100, (h.scrollTop / max) * 100) : 0 });
+    };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+  }
+  componentWillUnmount() { window.removeEventListener('scroll', this.onScroll); }
+  renderVals() {
+    const showSidebar = this.props.showSidebar ?? true;
+    const CURRENT = 18;
+    const entries = [
+      ['Foreword', 'Foreword.dc.html'],
+      ['1 · The Trust Shift', 'Chapter 1 - The Trust Shift.dc.html'],
+      ['2 · How We Got Here', 'Chapter 2 - How We Got Here.dc.html'],
+      ['3 · What Is Advocacy-Led Growth', 'Chapter 3 - What Is Advocacy-Led Growth.dc.html'],
+      ['4 · The Three Pillars', 'Chapter 4 - The Three Pillars.dc.html'],
+      ['5 · The Organic Principle', 'Chapter 5 - The Organic Principle.dc.html'],
+      ['6 · Who Creates the Content', 'Chapter 6 - Who Creates the Content.dc.html'],
+      ['7 · The Economics', 'Chapter 7 - The Economics.dc.html'],
+      ['8 · Amplification', 'Chapter 8 - Amplification.dc.html'],
+      ['9 · Building the System', 'Chapter 9 - Building the System.dc.html'],
+      ['10 · The Four Functions', 'Chapter 10 - The Four Functions.dc.html'],
+      ['11 · Measurement That Matters', 'Chapter 11 - Measurement That Matters.dc.html'],
+      ['12 · ALG Alongside PLG and SLG', 'Chapter 12 - ALG Alongside PLG and SLG.dc.html'],
+      ['13 · The Compounding Effect', 'Chapter 13 - The Compounding Effect.dc.html'],
+      ['13\u00BD · What Goes Wrong', 'Chapter 13.5 - What Goes Wrong.dc.html'],
+      ['14 · Getting Started', 'Chapter 14 - Getting Started.dc.html'],
+      ['15 · The Future of B2B Growth', 'Chapter 15 - The Future of B2B Growth.dc.html'],
+      ['Afterword', 'Afterword.dc.html'],
+      ['Notes', 'Notes.dc.html']
+    ];
+    const toc = showSidebar ? entries.map(([label, href], i) => ({
+      label,
+      href,
+      current: i === CURRENT,
+      linked: i !== CURRENT,
+      upcoming: false
+    })) : [];
+    return {
+      toc,
+      progressPct: this.state.progress.toFixed(1) + '%',
+      email: this.state.email,
+      notSubmitted: !this.state.submitted,
+      submitted: this.state.submitted,
+      setEmail: (e) => this.setState({ email: e.target.value }),
+      submitEmail: (e) => {
+        e.preventDefault();
+        try { localStorage.setItem('alg-pdf-email', this.state.email); } catch (err) {}
+        this.setState({ submitted: true });
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>

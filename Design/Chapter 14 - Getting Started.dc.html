@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Chapter 14: Getting Started — Advocacy-Led Growth</title>
+<meta name="description" content="Practical first steps, regardless of company stage. From The Advocacy Operating System, Second Edition — free to read.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #FFFCF7; color: #1A1A1A; font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 18px; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+a { color: #E85D04; text-decoration: none; transition: color 0.2s; }
+a:hover { color: #D45200; }
+@media (max-width: 900px) { .toc-sidebar { display: none !important; } }
+@media (max-width: 768px) { body { font-size: 16px; } }
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Getting Started","alternativeHeadline":"Chapter 14: Getting Started of The Advocacy Operating System","author":{"@type":"Person","name":"Brian De Groodt"},"isPartOf":{"@type":"Book","name":"The Advocacy Operating System","bookEdition":"Second Edition"},"datePublished":"2026-07","inLanguage":"en","description":"Practical first steps, regardless of company stage."},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Advocacy-Led Growth","item":"https://advocacyledgrowth.com/"},{"@type":"ListItem","position":2,"name":"Chapters","item":"https://advocacyledgrowth.com/#contents"},{"@type":"ListItem","position":3,"name":"Chapter 14: Getting Started"}]}]}
+</script>
+</helmet>
+<div style="min-height: 100vh; display: flex; flex-direction: column;">
+  <div style="position: fixed; top: 0; left: 0; height: 3px; background: #E85D04; z-index: 200; width: {{ progressPct }}; transition: width 0.1s linear;"></div>
+  <nav style="padding: 1.25rem 2rem; border-bottom: 1px solid #E5E0D8; background: rgba(255,252,247,0.95); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 100;">
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem;">
+      <a href="Home.dc.html" style="font-family: Georgia, serif; font-weight: 700; font-size: 1.15rem; color: #1A1A1A;">Advocacy-Led Growth</a>
+      <a href="Home.dc.html#download" style="background: transparent; color: #E85D04; padding: 0.5rem 1rem; font-size: 0.875rem; font-weight: 500; border: 1px solid #E85D04; border-radius: 4px; transition: background 0.2s, color 0.2s;" style-hover="background: #E85D04; color: #FFFFFF;">Get the PDF</a>
+    </div>
+  </nav>
+
+  <div style="max-width: 1100px; margin: 0 auto; width: 100%; box-sizing: border-box; padding: 0 2rem; display: flex; gap: 4rem; align-items: flex-start;">
+    <aside class="toc-sidebar" style="position: sticky; top: 6rem; width: 240px; flex-shrink: 0; padding: 3rem 0; max-height: calc(100vh - 6rem); overflow-y: auto;">
+      <p style="margin: 0 0 1.25rem; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #E85D04;">Contents</p>
+      <div style="display: flex; flex-direction: column; gap: 0.65rem;">
+        <sc-for list="{{ toc }}" as="t" hint-placeholder-count="8">
+          <div>
+            <sc-if value="{{ t.current }}" hint-placeholder-val="{{ false }}">
+              <span style="display: block; font-size: 0.85rem; font-weight: 600; color: #1A1A1A; border-left: 3px solid #E85D04; padding-left: 0.75rem; line-height: 1.4;">{{ t.label }}</span>
+            </sc-if>
+            <sc-if value="{{ t.linked }}" hint-placeholder-val="{{ false }}">
+              <a href="{{ t.href }}" style="display: block; font-size: 0.85rem; color: #5A5A5A; padding-left: calc(0.75rem + 3px); line-height: 1.4;" style-hover="color: #1A1A1A;">{{ t.label }}</a>
+            </sc-if>
+            <sc-if value="{{ t.upcoming }}" hint-placeholder-val="{{ true }}">
+              <span style="display: block; font-size: 0.85rem; color: #5A5A5A; opacity: 0.55; padding-left: calc(0.75rem + 3px); line-height: 1.4;">{{ t.label }}</span>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+    </aside>
+
+    <article style="max-width: 720px; min-width: 0; padding: 3rem 0 4rem;">
+      <p style="margin: 0 0 2.5rem; font-size: 0.8rem; color: #5A5A5A;"><a href="Home.dc.html" style="color: #5A5A5A;" style-hover="color: #1A1A1A;">Home</a> <span style="margin: 0 0.4rem;">/</span> <a href="Home.dc.html#contents" style="color: #5A5A5A;" style-hover="color: #1A1A1A;">Chapters</a> <span style="margin: 0 0.4rem;">/</span> <span style="color: #1A1A1A;">Chapter 14</span></p>
+      <p style="margin: 0 0 1rem; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #E85D04;">Chapter 14</p>
+      <h1 style="margin: 0 0 1.25rem; font-family: Fraunces, Georgia, serif; font-size: 3.25rem; font-weight: 700; line-height: 1.12; letter-spacing: -0.025em; text-wrap: pretty;">Getting Started</h1>
+      <p style="margin: 0 0 1.5rem; font-size: 1.15rem; line-height: 1.65; color: #5A5A5A; font-family: Fraunces, Georgia, serif; font-style: italic;">Practical first steps, regardless of company stage.</p>
+      <p style="margin: 0 0 3rem; padding-bottom: 2.5rem; border-bottom: 1px solid #E5E0D8; font-size: 0.85rem; color: #5A5A5A;">By <strong style="color: #1A1A1A; font-weight: 600;">Brian De Groodt</strong> · 4 min read · From <em>The Advocacy Operating System</em>, Second Edition</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">If you've read this far and you're convinced the thesis has merit, the natural question is: where do I start?</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Here's what I'd recommend, regardless of your company stage.</p>
+      <h2 style="margin: 3rem 0 1.25rem; font-family: Fraunces, Georgia, serif; font-size: 1.75rem; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25;">Step 1: audit what you already have</h2>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Before building anything, look at what's already happening. Search LinkedIn for mentions of your product. Search X. Check G2 and other review sites. Ask your CS team: which customers are already talking about us publicly?</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">You may be surprised. Most B2B SaaS companies with even a modest customer base have customers who have already created organic content about them. Those people are your Tier 1 advocate candidates, and you haven't even asked them yet.</p>
+      <h2 style="margin: 3rem 0 1.25rem; font-family: Fraunces, Georgia, serif; font-size: 1.75rem; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25;">Step 2: have the conversations</h2>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Pick five of your happiest customers. Not your biggest logos. Your happiest users. The ones your CS team would describe as genuine fans.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Have a conversation. Not a pitch, and not a recruitment call. Just a conversation: "We're thinking about building a program where customers can share their experience with [Product] publicly, and we'd compensate them for their time. Would something like that interest you? What would make it worth your while?"</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">The answers will tell you whether you have the raw material for an advocacy program. If four out of five say some version of "I'd do that" or "I've actually been meaning to write about this," you have something to work with.</p>
+      <h2 style="margin: 3rem 0 1.25rem; font-family: Fraunces, Georgia, serif; font-size: 1.75rem; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25;">Step 3: start small and learn</h2>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Run a pilot with 8 to 12 advocates. Keep it simple. Publish a handful of content briefs as optional prompts. Set transparent compensation rates. Use whatever tools you have (even a spreadsheet and Venmo) to manage the first cycle. The operational infrastructure can be built up as you learn.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">The goal of the pilot is to answer three questions rather than to generate massive reach: Do advocates actually create content? Is the content credible and engaging? Can you build an operational process around it that's sustainable?</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">If the answer to all three is yes, you have the foundation for a real program. Scale from there.</p>
+      <h2 style="margin: 3rem 0 1.25rem; font-family: Fraunces, Georgia, serif; font-size: 1.75rem; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25;">Step 4: measure and build the case</h2>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">From day one, track everything. Impressions, engagement, content volume, advocate satisfaction. Start tracking pipeline influence as soon as you can. Build the EMV calculation so you have a dollar figure to compare against your paid spend.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">The internal case for advocacy funding gets stronger with every month of data. By Month 3, you should have enough to demonstrate that the channel is real. By Month 6, you should have enough to justify a formal budget allocation.</p>
+      <h2 style="margin: 3rem 0 1.25rem; font-family: Fraunces, Georgia, serif; font-size: 1.75rem; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25;">Step 5: scale what works</h2>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Once your pilot has answered the three core questions (advocates will create, the content lands, you can operationalize it), the path forward is expansion. Recruit a second cohort of advocates, drawing on what you learned about ideal advocate profiles in the first cohort. Expand your brief library based on which topics generated the most engagement. Begin Thought Leader Ad amplification on your top-performing posts. Integrate pipeline influence tracking with your CRM.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">The scaling motion should feel natural. If your first cohort went well, several of those advocates will refer peers. Your CS team, having seen the results, will be more enthusiastic about making introductions. Your marketing team will want more of the content that's outperforming their branded material.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">By Month 6 of a well-run program, you should have 15 to 25 active advocates producing 30 to 50 pieces of content per month, with measurable pipeline influence and a clear EMV comparison to your paid channels. By Month 12, advocacy should be a recognized, budgeted channel within your go-to-market organization, with its own metrics, its own operational owner, and its own trajectory.</p>
+      <h2 style="margin: 3rem 0 1.25rem; font-family: Fraunces, Georgia, serif; font-size: 1.75rem; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25;">A note on timing</h2>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">I'm often asked when a company is ready for advocacy-led growth. The honest answer is: earlier than you think.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">You don't need thousands of customers. You need 50 or more active users with real product experience. You don't need a huge marketing team. You need one person willing to invest a few hours per week in program management. You don't need a formal platform on day one. You need a spreadsheet, a Venmo account, and a willingness to experiment.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">The companies that wait for the right time to start an advocacy program are usually waiting for a moment of maturity that never arrives cleanly. Meanwhile, their competitors are building trust with every advocate post that goes live.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">My advice: start messy, start small, and start now. The compound clock starts ticking when the first advocate post goes live. Every month you wait is a month of compounding you don't get back.</p>
+      <div style="margin: 3rem 0; background: #FFFFFF; border: 1px solid #E5E0D8; border-left: 4px solid #E85D04; border-radius: 0 8px 8px 0; padding: 2rem 2.5rem;">
+        <p style="margin: 0 0 1rem; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #E85D04;">Key takeaways</p>
+        <ul style="margin: 0; padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.65rem; font-size: 0.95rem; color: #1A1A1A;">
+          <li>Step 1: audit what you already have — happy customers, organic mentions, existing advocate behavior.</li>
+          <li>Steps 2–3: have direct conversations with candidates, then start small and learn before scaling.</li>
+          <li>Steps 4–5: measure, build the internal case, and scale only what the data supports.</li>
+          <li>The best time to start is before your competitors do — the compounding advantage goes to whoever starts first.</li>
+        </ul>
+      </div>
+
+      <div style="margin-top: 3rem; padding-top: 2.5rem; border-top: 1px solid #E5E0D8; display: flex; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap;">
+        <a href="Chapter 13.5 - What Goes Wrong.dc.html" style="color: #1A1A1A;" style-hover="color: #E85D04;">
+          <p style="margin: 0 0 0.25rem; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #E85D04;">← Previous</p>
+          <p style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: 1.1rem;">Chapter 13½: What Goes Wrong</p>
+        </a>
+        <a href="Chapter 15 - The Future of B2B Growth.dc.html" style="text-align: right; color: #1A1A1A;" style-hover="color: #E85D04;">
+          <p style="margin: 0 0 0.25rem; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #E85D04;">Next →</p>
+          <p style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: 1.1rem;">Chapter 15: The Future of B2B Growth</p>
+        </a>
+      </div>
+
+      <div style="margin-top: 3rem; background: #FFFFFF; border: 1px solid #E5E0D8; border-radius: 8px; padding: 2rem 2.5rem;">
+        <h2 style="margin: 0 0 0.6rem; font-family: Fraunces, Georgia, serif; font-size: 1.25rem; font-weight: 600;">Read the whole book offline</h2>
+        <p style="margin: 0 0 1.5rem; font-size: 0.9rem; color: #5A5A5A; text-wrap: pretty;">Enter your email and we'll send the complete book as a PDF — one email, no newsletter.</p>
+        <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+          <form onSubmit="{{ submitEmail }}" style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <input type="email" required="required" placeholder="you@company.com" value="{{ email }}" onChange="{{ setEmail }}" style="flex: 1; min-width: 200px; background: #FFFFFF; border: 1px solid #E5E0D8; border-radius: 6px; padding: 0.75rem 1rem; font-size: 0.95rem; color: #1A1A1A; font-family: Inter, sans-serif; outline: none; transition: border-color 0.2s, box-shadow 0.2s;" style-focus="border-color: #E85D04; box-shadow: 0 0 0 3px rgba(232,93,4,0.1);">
+            <button type="submit" style="background: #E85D04; color: #FFFFFF; padding: 0.75rem 1.75rem; font-size: 0.95rem; font-weight: 600; border: none; border-radius: 6px; cursor: pointer; font-family: Inter, sans-serif; transition: background 0.2s, transform 0.2s, box-shadow 0.2s;" style-hover="background: #D45200; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(232,93,4,0.3);">Send me the PDF</button>
+          </form>
+        </sc-if>
+        <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+          <p style="margin: 0; font-weight: 600; color: #E85D04; font-size: 0.95rem;">Check your inbox — the PDF is on its way.</p>
+        </sc-if>
+      </div>
+    </article>
+  </div>
+
+  <footer style="margin-top: auto; padding: 3rem 2rem; border-top: 1px solid #E5E0D8;">
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: baseline; gap: 1.5rem; flex-wrap: wrap;">
+      <p style="margin: 0; font-size: 0.8rem; color: #5A5A5A;">© 2026 advocacyledgrowth.com · <em>The Advocacy Operating System</em>, Second Edition</p>
+      <p style="margin: 0; font-size: 0.8rem; color: #5A5A5A;">An educational project by the team at <a href="https://kindlinghq.com" style="color: #5A5A5A; text-decoration: underline;" style-hover="color: #1A1A1A;">Kindling</a></p>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showSidebar&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;}}">
+class Component extends DCLogic {
+  state = { email: '', submitted: false, progress: 0 };
+  componentDidMount() {
+    this.onScroll = () => {
+      const h = document.documentElement;
+      const max = h.scrollHeight - h.clientHeight;
+      this.setState({ progress: max > 0 ? Math.min(100, (h.scrollTop / max) * 100) : 0 });
+    };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+  }
+  componentWillUnmount() { window.removeEventListener('scroll', this.onScroll); }
+  renderVals() {
+    const showSidebar = this.props.showSidebar ?? true;
+    const CURRENT = 15;
+    const entries = [
+      ['Foreword', 'Foreword.dc.html'],
+      ['1 · The Trust Shift', 'Chapter 1 - The Trust Shift.dc.html'],
+      ['2 · How We Got Here', 'Chapter 2 - How We Got Here.dc.html'],
+      ['3 · What Is Advocacy-Led Growth', 'Chapter 3 - What Is Advocacy-Led Growth.dc.html'],
+      ['4 · The Three Pillars', 'Chapter 4 - The Three Pillars.dc.html'],
+      ['5 · The Organic Principle', 'Chapter 5 - The Organic Principle.dc.html'],
+      ['6 · Who Creates the Content', 'Chapter 6 - Who Creates the Content.dc.html'],
+      ['7 · The Economics', 'Chapter 7 - The Economics.dc.html'],
+      ['8 · Amplification', 'Chapter 8 - Amplification.dc.html'],
+      ['9 · Building the System', 'Chapter 9 - Building the System.dc.html'],
+      ['10 · The Four Functions', 'Chapter 10 - The Four Functions.dc.html'],
+      ['11 · Measurement That Matters', 'Chapter 11 - Measurement That Matters.dc.html'],
+      ['12 · ALG Alongside PLG and SLG', 'Chapter 12 - ALG Alongside PLG and SLG.dc.html'],
+      ['13 · The Compounding Effect', 'Chapter 13 - The Compounding Effect.dc.html'],
+      ['13\u00BD · What Goes Wrong', 'Chapter 13.5 - What Goes Wrong.dc.html'],
+      ['14 · Getting Started', 'Chapter 14 - Getting Started.dc.html'],
+      ['15 · The Future of B2B Growth', 'Chapter 15 - The Future of B2B Growth.dc.html'],
+      ['Afterword', 'Afterword.dc.html'],
+      ['Notes', 'Notes.dc.html']
+    ];
+    const toc = showSidebar ? entries.map(([label, href], i) => ({
+      label,
+      href,
+      current: i === CURRENT,
+      linked: i !== CURRENT,
+      upcoming: false
+    })) : [];
+    return {
+      toc,
+      progressPct: this.state.progress.toFixed(1) + '%',
+      email: this.state.email,
+      notSubmitted: !this.state.submitted,
+      submitted: this.state.submitted,
+      setEmail: (e) => this.setState({ email: e.target.value }),
+      submitEmail: (e) => {
+        e.preventDefault();
+        try { localStorage.setItem('alg-pdf-email', this.state.email); } catch (err) {}
+        this.setState({ submitted: true });
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>

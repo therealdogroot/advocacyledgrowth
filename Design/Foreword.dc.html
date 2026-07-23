@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Foreword — Advocacy-Led Growth</title>
+<meta name="description" content="Why I wrote this, what changed in this edition, and what I hope you take from it. From The Advocacy Operating System, Second Edition — free to read.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #FFFCF7; color: #1A1A1A; font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 18px; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+a { color: #E85D04; text-decoration: none; transition: color 0.2s; }
+a:hover { color: #D45200; }
+@media (max-width: 900px) { .toc-sidebar { display: none !important; } }
+@media (max-width: 768px) { body { font-size: 16px; } }
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Foreword","alternativeHeadline":"Foreword of The Advocacy Operating System","author":{"@type":"Person","name":"Brian De Groodt"},"isPartOf":{"@type":"Book","name":"The Advocacy Operating System","bookEdition":"Second Edition"},"datePublished":"2026-07","inLanguage":"en","description":"Why I wrote this, what changed in this edition, and what I hope you take from it."},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Advocacy-Led Growth","item":"https://advocacyledgrowth.com/"},{"@type":"ListItem","position":2,"name":"Chapters","item":"https://advocacyledgrowth.com/#contents"},{"@type":"ListItem","position":3,"name":"Foreword"}]}]}
+</script>
+</helmet>
+<div style="min-height: 100vh; display: flex; flex-direction: column;">
+  <div style="position: fixed; top: 0; left: 0; height: 3px; background: #E85D04; z-index: 200; width: {{ progressPct }}; transition: width 0.1s linear;"></div>
+  <nav style="padding: 1.25rem 2rem; border-bottom: 1px solid #E5E0D8; background: rgba(255,252,247,0.95); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 100;">
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem;">
+      <a href="Home.dc.html" style="font-family: Georgia, serif; font-weight: 700; font-size: 1.15rem; color: #1A1A1A;">Advocacy-Led Growth</a>
+      <a href="Home.dc.html#download" style="background: transparent; color: #E85D04; padding: 0.5rem 1rem; font-size: 0.875rem; font-weight: 500; border: 1px solid #E85D04; border-radius: 4px; transition: background 0.2s, color 0.2s;" style-hover="background: #E85D04; color: #FFFFFF;">Get the PDF</a>
+    </div>
+  </nav>
+
+  <div style="max-width: 1100px; margin: 0 auto; width: 100%; box-sizing: border-box; padding: 0 2rem; display: flex; gap: 4rem; align-items: flex-start;">
+    <aside class="toc-sidebar" style="position: sticky; top: 6rem; width: 240px; flex-shrink: 0; padding: 3rem 0; max-height: calc(100vh - 6rem); overflow-y: auto;">
+      <p style="margin: 0 0 1.25rem; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #E85D04;">Contents</p>
+      <div style="display: flex; flex-direction: column; gap: 0.65rem;">
+        <sc-for list="{{ toc }}" as="t" hint-placeholder-count="8">
+          <div>
+            <sc-if value="{{ t.current }}" hint-placeholder-val="{{ false }}">
+              <span style="display: block; font-size: 0.85rem; font-weight: 600; color: #1A1A1A; border-left: 3px solid #E85D04; padding-left: 0.75rem; line-height: 1.4;">{{ t.label }}</span>
+            </sc-if>
+            <sc-if value="{{ t.linked }}" hint-placeholder-val="{{ false }}">
+              <a href="{{ t.href }}" style="display: block; font-size: 0.85rem; color: #5A5A5A; padding-left: calc(0.75rem + 3px); line-height: 1.4;" style-hover="color: #1A1A1A;">{{ t.label }}</a>
+            </sc-if>
+            <sc-if value="{{ t.upcoming }}" hint-placeholder-val="{{ true }}">
+              <span style="display: block; font-size: 0.85rem; color: #5A5A5A; opacity: 0.55; padding-left: calc(0.75rem + 3px); line-height: 1.4;">{{ t.label }}</span>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+    </aside>
+
+    <article style="max-width: 720px; min-width: 0; padding: 3rem 0 4rem;">
+      <p style="margin: 0 0 2.5rem; font-size: 0.8rem; color: #5A5A5A;"><a href="Home.dc.html" style="color: #5A5A5A;" style-hover="color: #1A1A1A;">Home</a> <span style="margin: 0 0.4rem;">/</span> <a href="Home.dc.html#contents" style="color: #5A5A5A;" style-hover="color: #1A1A1A;">Chapters</a> <span style="margin: 0 0.4rem;">/</span> <span style="color: #1A1A1A;">Foreword</span></p>
+      <p style="margin: 0 0 1rem; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #E85D04;">Foreword</p>
+      <h1 style="margin: 0 0 1.25rem; font-family: Fraunces, Georgia, serif; font-size: 3.25rem; font-weight: 700; line-height: 1.12; letter-spacing: -0.025em; text-wrap: pretty;">Foreword</h1>
+      <p style="margin: 0 0 1.5rem; font-size: 1.15rem; line-height: 1.65; color: #5A5A5A; font-family: Fraunces, Georgia, serif; font-style: italic;">Why I wrote this, what changed in this edition, and what I hope you take from it.</p>
+      <p style="margin: 0 0 3rem; padding-bottom: 2.5rem; border-bottom: 1px solid #E5E0D8; font-size: 0.85rem; color: #5A5A5A;">By <strong style="color: #1A1A1A; font-weight: 600;">Brian De Groodt</strong> · 4 min read · From <em>The Advocacy Operating System</em>, Second Edition</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;"><em>A note on this edition: this is the second edition of a book I first published in March 2026. I've updated it for changes to LinkedIn's advertising products, added a chapter on program architecture, and tightened the writing throughout. One thing has not changed: Kindling is still early, and I still won't invent results we haven't produced. Everything I said about that in the first edition stands.</em></p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Let me tell you about a deal I lost in 2014 that I think about all the time.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">I was selling enterprise HR software. Big deal, seven figures, and I'd run a textbook sales process. Executive sponsorship. Technical validation. A business case built with the CFO's team. I had internal champions and the competitive advantage on features. I was confident.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">We lost. And when I did the loss debrief, which I always did because losing teaches more than winning, the buyer told me something I've never forgotten. They said: "Your product was probably the better fit. But we talked to three people who use [Competitor], and they were all enthusiastic. When we tried to find people who use your product, we couldn't find anyone talking about it. That made us nervous."</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Read that again. They chose the inferior product because the other vendor's customers were visibly enthusiastic and ours were invisible. We had happy customers. We had high NPS and great case studies on our website. None of it mattered, because none of it was visible in the places where the buyer was looking.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">That deal haunted me for years, and some version of it was happening across the industry. Great products losing to louder products. Companies with happy customers losing to companies whose customers were simply more visible.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">I kept asking myself: why doesn't someone build a system for this? Why are we leaving the most credible marketing channel a company has to pure chance?</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">I spent 25 years selling enterprise software. SAP, Medallia, Cornerstone, ADP. I closed north of $250 million in deals across those companies, and I can tell you exactly how most of those deals actually got done.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">The demo didn't close them. Neither did the ROI calculator, or even the sales process, though I'd like to think I ran a good one. What closed those deals, more often than I'm comfortable admitting, was a phone call the buyer made to someone they trusted. A former colleague. An ops leader at another company who happened to use the product. Someone in their network who could say, with no agenda, whether the thing actually worked.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">I watched this pattern repeat for two decades. The buyer's internal reference call, the one my sales team didn't schedule and didn't know about, was almost always the moment the deal tipped. The best salespeople I worked with understood this instinctively. They invested in making their existing customers successful enough, and visible enough, that when the next prospect asked around, the answer came back positive.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">What always bothered me was that nobody built a system for it.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Companies would spend millions on paid advertising, content marketing, SDR teams, trade shows, and all the other machinery of B2B growth. Then when it came to the single most credible channel they had, their own happy customers talking about them, the best they could do was an occasional case study and a reference request that made the customer feel like they were doing the company a favor.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">I started Kindling because I believe there's a better way. Better in the way that product-led growth was better than the enterprise sales model it disrupted: a structural shift in how B2B companies grow, built on the simple observation that your customers are more credible than your marketing team, and the technology now exists to turn that credibility into a real channel.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">This book lays out the framework for that shift. I'm calling it Advocacy-Led Growth, and I believe it represents the next real evolution in how B2B SaaS companies build pipeline.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">A few things I want to be upfront about before you read further.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">First, I'm building a company around this thesis. Kindling is the platform designed to operationalize what this book describes. I'll reference it where it's relevant, but this book is not a product pitch. The ideas here are bigger than any one tool, and they'll work whether you use Kindling or build the systems yourself.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Second, I don't have a library of customer case studies to share with you. Kindling is early. We're in the market, the product is live, and we're working with our first cohort of companies. I won't invent results we haven't produced. What I do have is 25 years of pattern recognition from the buy side and the sell side of enterprise software, a real command of the research that supports this thesis, and a conviction that the market is ready for this shift. Where I cite research, it's real. Where I share observations, they come from direct experience. Where I speculate, I'll tell you.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Third, this framework is designed to work alongside everything you're already doing, not replace it. If you're running a product-led motion, advocacy makes it convert better. If you're sales-led, advocacy gives your reps air cover. If you're doing content marketing, advocacy gives you content your team cannot produce, because it comes from people who use the product and have no reason to lie about it.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">I wrote this book for founders and marketing leaders at B2B SaaS companies who know something is broken about how they grow, who have happy customers they aren't using, and who want a framework that's both intellectually honest and practically useful.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">I hope this is that framework.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Brian De Groodt Boulder, Colorado July 2026</p>
+
+      <div style="margin-top: 3rem; padding-top: 2.5rem; border-top: 1px solid #E5E0D8; display: flex; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap;">
+        <a href="Home.dc.html" style="color: #1A1A1A;">
+          <p style="margin: 0 0 0.25rem; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5A5A5A;">← Back to</p>
+          <p style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: 1.1rem;">All chapters</p>
+        </a>
+        <a href="Chapter 1 - The Trust Shift.dc.html" style="text-align: right; color: #1A1A1A;" style-hover="color: #E85D04;">
+          <p style="margin: 0 0 0.25rem; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #E85D04;">Next →</p>
+          <p style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: 1.1rem;">Chapter 1: The Trust Shift</p>
+        </a>
+      </div>
+
+      <div style="margin-top: 3rem; background: #FFFFFF; border: 1px solid #E5E0D8; border-radius: 8px; padding: 2rem 2.5rem;">
+        <h2 style="margin: 0 0 0.6rem; font-family: Fraunces, Georgia, serif; font-size: 1.25rem; font-weight: 600;">Read the whole book offline</h2>
+        <p style="margin: 0 0 1.5rem; font-size: 0.9rem; color: #5A5A5A; text-wrap: pretty;">Enter your email and we'll send the complete book as a PDF — one email, no newsletter.</p>
+        <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+          <form onSubmit="{{ submitEmail }}" style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <input type="email" required="required" placeholder="you@company.com" value="{{ email }}" onChange="{{ setEmail }}" style="flex: 1; min-width: 200px; background: #FFFFFF; border: 1px solid #E5E0D8; border-radius: 6px; padding: 0.75rem 1rem; font-size: 0.95rem; color: #1A1A1A; font-family: Inter, sans-serif; outline: none; transition: border-color 0.2s, box-shadow 0.2s;" style-focus="border-color: #E85D04; box-shadow: 0 0 0 3px rgba(232,93,4,0.1);">
+            <button type="submit" style="background: #E85D04; color: #FFFFFF; padding: 0.75rem 1.75rem; font-size: 0.95rem; font-weight: 600; border: none; border-radius: 6px; cursor: pointer; font-family: Inter, sans-serif; transition: background 0.2s, transform 0.2s, box-shadow 0.2s;" style-hover="background: #D45200; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(232,93,4,0.3);">Send me the PDF</button>
+          </form>
+        </sc-if>
+        <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+          <p style="margin: 0; font-weight: 600; color: #E85D04; font-size: 0.95rem;">Check your inbox — the PDF is on its way.</p>
+        </sc-if>
+      </div>
+    </article>
+  </div>
+
+  <footer style="margin-top: auto; padding: 3rem 2rem; border-top: 1px solid #E5E0D8;">
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: baseline; gap: 1.5rem; flex-wrap: wrap;">
+      <p style="margin: 0; font-size: 0.8rem; color: #5A5A5A;">© 2026 advocacyledgrowth.com · <em>The Advocacy Operating System</em>, Second Edition</p>
+      <p style="margin: 0; font-size: 0.8rem; color: #5A5A5A;">An educational project by the team at <a href="https://kindlinghq.com" style="color: #5A5A5A; text-decoration: underline;" style-hover="color: #1A1A1A;">Kindling</a></p>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showSidebar&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;}}">
+class Component extends DCLogic {
+  state = { email: '', submitted: false, progress: 0 };
+  componentDidMount() {
+    this.onScroll = () => {
+      const h = document.documentElement;
+      const max = h.scrollHeight - h.clientHeight;
+      this.setState({ progress: max > 0 ? Math.min(100, (h.scrollTop / max) * 100) : 0 });
+    };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+  }
+  componentWillUnmount() { window.removeEventListener('scroll', this.onScroll); }
+  renderVals() {
+    const showSidebar = this.props.showSidebar ?? true;
+    const CURRENT = 0;
+    const entries = [
+      ['Foreword', 'Foreword.dc.html'],
+      ['1 · The Trust Shift', 'Chapter 1 - The Trust Shift.dc.html'],
+      ['2 · How We Got Here', 'Chapter 2 - How We Got Here.dc.html'],
+      ['3 · What Is Advocacy-Led Growth', 'Chapter 3 - What Is Advocacy-Led Growth.dc.html'],
+      ['4 · The Three Pillars', 'Chapter 4 - The Three Pillars.dc.html'],
+      ['5 · The Organic Principle', 'Chapter 5 - The Organic Principle.dc.html'],
+      ['6 · Who Creates the Content', 'Chapter 6 - Who Creates the Content.dc.html'],
+      ['7 · The Economics', 'Chapter 7 - The Economics.dc.html'],
+      ['8 · Amplification', 'Chapter 8 - Amplification.dc.html'],
+      ['9 · Building the System', 'Chapter 9 - Building the System.dc.html'],
+      ['10 · The Four Functions', 'Chapter 10 - The Four Functions.dc.html'],
+      ['11 · Measurement That Matters', 'Chapter 11 - Measurement That Matters.dc.html'],
+      ['12 · ALG Alongside PLG and SLG', 'Chapter 12 - ALG Alongside PLG and SLG.dc.html'],
+      ['13 · The Compounding Effect', 'Chapter 13 - The Compounding Effect.dc.html'],
+      ['13\u00BD · What Goes Wrong', 'Chapter 13.5 - What Goes Wrong.dc.html'],
+      ['14 · Getting Started', 'Chapter 14 - Getting Started.dc.html'],
+      ['15 · The Future of B2B Growth', 'Chapter 15 - The Future of B2B Growth.dc.html'],
+      ['Afterword', 'Afterword.dc.html'],
+      ['Notes', 'Notes.dc.html']
+    ];
+    const toc = showSidebar ? entries.map(([label, href], i) => ({
+      label,
+      href,
+      current: i === CURRENT,
+      linked: i !== CURRENT,
+      upcoming: false
+    })) : [];
+    return {
+      toc,
+      progressPct: this.state.progress.toFixed(1) + '%',
+      email: this.state.email,
+      notSubmitted: !this.state.submitted,
+      submitted: this.state.submitted,
+      setEmail: (e) => this.setState({ email: e.target.value }),
+      submitEmail: (e) => {
+        e.preventDefault();
+        try { localStorage.setItem('alg-pdf-email', this.state.email); } catch (err) {}
+        this.setState({ submitted: true });
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>

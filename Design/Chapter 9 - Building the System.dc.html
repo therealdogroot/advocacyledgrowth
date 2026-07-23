@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Chapter 9: Building the System — Advocacy-Led Growth</title>
+<meta name="description" content="From strategy to operations, what it takes to stand up an ALG program. From The Advocacy Operating System, Second Edition — free to read.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #FFFCF7; color: #1A1A1A; font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 18px; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+a { color: #E85D04; text-decoration: none; transition: color 0.2s; }
+a:hover { color: #D45200; }
+@media (max-width: 900px) { .toc-sidebar { display: none !important; } }
+@media (max-width: 768px) { body { font-size: 16px; } }
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Building the System","alternativeHeadline":"Chapter 9: Building the System of The Advocacy Operating System","author":{"@type":"Person","name":"Brian De Groodt"},"isPartOf":{"@type":"Book","name":"The Advocacy Operating System","bookEdition":"Second Edition"},"datePublished":"2026-07","inLanguage":"en","description":"From strategy to operations, what it takes to stand up an ALG program."},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Advocacy-Led Growth","item":"https://advocacyledgrowth.com/"},{"@type":"ListItem","position":2,"name":"Chapters","item":"https://advocacyledgrowth.com/#contents"},{"@type":"ListItem","position":3,"name":"Chapter 9: Building the System"}]}]}
+</script>
+</helmet>
+<div style="min-height: 100vh; display: flex; flex-direction: column;">
+  <div style="position: fixed; top: 0; left: 0; height: 3px; background: #E85D04; z-index: 200; width: {{ progressPct }}; transition: width 0.1s linear;"></div>
+  <nav style="padding: 1.25rem 2rem; border-bottom: 1px solid #E5E0D8; background: rgba(255,252,247,0.95); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 100;">
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem;">
+      <a href="Home.dc.html" style="font-family: Georgia, serif; font-weight: 700; font-size: 1.15rem; color: #1A1A1A;">Advocacy-Led Growth</a>
+      <a href="Home.dc.html#download" style="background: transparent; color: #E85D04; padding: 0.5rem 1rem; font-size: 0.875rem; font-weight: 500; border: 1px solid #E85D04; border-radius: 4px; transition: background 0.2s, color 0.2s;" style-hover="background: #E85D04; color: #FFFFFF;">Get the PDF</a>
+    </div>
+  </nav>
+
+  <div style="max-width: 1100px; margin: 0 auto; width: 100%; box-sizing: border-box; padding: 0 2rem; display: flex; gap: 4rem; align-items: flex-start;">
+    <aside class="toc-sidebar" style="position: sticky; top: 6rem; width: 240px; flex-shrink: 0; padding: 3rem 0; max-height: calc(100vh - 6rem); overflow-y: auto;">
+      <p style="margin: 0 0 1.25rem; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #E85D04;">Contents</p>
+      <div style="display: flex; flex-direction: column; gap: 0.65rem;">
+        <sc-for list="{{ toc }}" as="t" hint-placeholder-count="8">
+          <div>
+            <sc-if value="{{ t.current }}" hint-placeholder-val="{{ false }}">
+              <span style="display: block; font-size: 0.85rem; font-weight: 600; color: #1A1A1A; border-left: 3px solid #E85D04; padding-left: 0.75rem; line-height: 1.4;">{{ t.label }}</span>
+            </sc-if>
+            <sc-if value="{{ t.linked }}" hint-placeholder-val="{{ false }}">
+              <a href="{{ t.href }}" style="display: block; font-size: 0.85rem; color: #5A5A5A; padding-left: calc(0.75rem + 3px); line-height: 1.4;" style-hover="color: #1A1A1A;">{{ t.label }}</a>
+            </sc-if>
+            <sc-if value="{{ t.upcoming }}" hint-placeholder-val="{{ true }}">
+              <span style="display: block; font-size: 0.85rem; color: #5A5A5A; opacity: 0.55; padding-left: calc(0.75rem + 3px); line-height: 1.4;">{{ t.label }}</span>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+    </aside>
+
+    <article style="max-width: 720px; min-width: 0; padding: 3rem 0 4rem;">
+      <p style="margin: 0 0 2.5rem; font-size: 0.8rem; color: #5A5A5A;"><a href="Home.dc.html" style="color: #5A5A5A;" style-hover="color: #1A1A1A;">Home</a> <span style="margin: 0 0.4rem;">/</span> <a href="Home.dc.html#contents" style="color: #5A5A5A;" style-hover="color: #1A1A1A;">Chapters</a> <span style="margin: 0 0.4rem;">/</span> <span style="color: #1A1A1A;">Chapter 9</span></p>
+      <p style="margin: 0 0 1rem; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #E85D04;">Chapter 9</p>
+      <h1 style="margin: 0 0 1.25rem; font-family: Fraunces, Georgia, serif; font-size: 3.25rem; font-weight: 700; line-height: 1.12; letter-spacing: -0.025em; text-wrap: pretty;">Building the System</h1>
+      <p style="margin: 0 0 1.5rem; font-size: 1.15rem; line-height: 1.65; color: #5A5A5A; font-family: Fraunces, Georgia, serif; font-style: italic;">From strategy to operations, what it takes to stand up an ALG program.</p>
+      <p style="margin: 0 0 3rem; padding-bottom: 2.5rem; border-bottom: 1px solid #E5E0D8; font-size: 0.85rem; color: #5A5A5A;">By <strong style="color: #1A1A1A; font-weight: 600;">Brian De Groodt</strong> · 6 min read · From <em>The Advocacy Operating System</em>, Second Edition</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">The gap between understanding Advocacy-Led Growth conceptually and running it operationally is wide. Most companies that attempt advocacy programs fail because they underestimated the operational infrastructure required, not because the thesis was wrong.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">What follows is a summary of what it takes to build and run an ALG program. This draws from the operational model we've developed at Kindling, worked through in our consulting engagements, and refined into what we call the Advocacy Operating System.</p>
+      <h2 style="margin: 3rem 0 1.25rem; font-family: Fraunces, Georgia, serif; font-size: 1.75rem; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25;">Phase 1: foundation</h2>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Before recruiting a single advocate, you need to make five foundational decisions.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">First, define your Ideal Advocate Profile. Not every customer is a good advocate. The best candidates use the product regularly, work in roles that your target buyers identify with, have some presence on social platforms (they don't need a huge following, but they should post occasionally), and have a real positive relationship with the product. Your customer success team usually knows who these people are.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Second, design your compensation model. Advocates should be paid transparently for their time. Published rates, per content type, visible to everyone. Typical ranges for B2B SaaS advocacy programs run from $50 to $150 for a LinkedIn text post, $150 to $300 for short video content, and up from there for longer formats. The rates should reflect the value of the advocate's time and expertise rather than the minimum you can get away with.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Third, write your content guidelines. What topics are encouraged? What's off-limits? How much creative freedom do advocates have? What are the FTC disclosure requirements? The guidelines should be clear and concise. A two-page document, not a thirty-page brand manual.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Fourth, build your content brief library. These are the optional prompts advocates can draw from when they want to create content but aren't sure where to start. A good brief library has a mix of evergreen prompts ("how I use the product in my workflow") and moment-driven prompts tied to product launches, conferences, or industry events. Remember: these are a menu, never a task list.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Fifth, set up your infrastructure: a platform for managing the program (this is what Kindling is built for), payout processing (we use Stripe Connect), content tracking, and performance measurement.</p>
+      <h2 style="margin: 3rem 0 1.25rem; font-family: Fraunces, Georgia, serif; font-size: 1.75rem; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25;">Phase 2: recruitment</h2>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Advocate recruitment should be warm, personal, and respectful. The best approach is a personal introduction from someone the customer already trusts, typically their customer success manager or an executive at your company.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">The message should convey three things: we value you as a customer, we're launching a program that rewards customers for sharing their experience publicly, and we'd love for you to be one of the first people in it. The tone is invitation.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Expect conversion rates in the range of 40-60% from warm outreach to expressed interest, and 70-85% from expressed interest to enrolled advocate. These rates are far higher than cold outreach because you're asking people to do something they likely would have done for free if they'd thought of it.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Start small. Ten to fifteen advocates in your first cohort is plenty. You'll learn more from running a small program well than from trying to scale before the operational kinks are worked out.</p>
+      <h2 style="margin: 3rem 0 1.25rem; font-family: Fraunces, Georgia, serif; font-size: 1.75rem; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25;">Phase 3: activation and support</h2>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Once advocates are onboarded, the program's job is to make content creation as easy and rewarding as possible. Share available briefs. Be responsive to questions. Review submitted content quickly (24-hour turnaround is the standard we hold ourselves to). Pay promptly and transparently.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Content review is a critical operational function. Every piece of advocate content should be reviewed before publication for factual accuracy, FTC compliance (is the disclosure present?), and brand alignment. The review should be fast, light-touch, and respectful of the advocate's voice. You're checking for problems, not editing for style. If the content sounds like the advocate wrote it, that's a feature.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">If content volume is lower than expected, the response should never be to pressure advocates. Instead, ask: are the briefs inspiring enough? Is the compensation fair? Is the process easy enough? Is the review turnaround fast enough? The problem is always on the program side, never on the advocate side.</p>
+      <h2 style="margin: 3rem 0 1.25rem; font-family: Fraunces, Georgia, serif; font-size: 1.75rem; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25;">Phase 4: optimization</h2>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">After 60 to 90 days of operation, you'll have enough data to optimize. Which content types generate the most engagement? Which briefs are advocates gravitating toward? Which advocates are most active, and what can you learn from their approach? Where is content showing up in pipeline conversations?</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Use this data to refresh the brief library, adjust the rate card if certain content types are generating outsized value, provide coaching to advocates who want it, and recruit your second cohort based on what you learned from the first.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">This is also the phase where Thought Leader Ad amplification typically begins, since you now have organic performance data to identify the best candidates for paid promotion.</p>
+      <h2 style="margin: 3rem 0 1.25rem; font-family: Fraunces, Georgia, serif; font-size: 1.75rem; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25;">Phase 5: transition to internal ownership</h2>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">If you started your advocacy program with external help, whether from Kindling's consulting team or another resource, there comes a point where the program needs to be owned internally. The goal of any done-for-you engagement is to make itself unnecessary.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">Transition works best when it's gradual. The internal program owner shadows the external team for two to three weeks, running the operations with coaching. Then they operate independently for another two to three weeks with the external team available for questions. By the end of that month, they should be comfortable running every recurring process: publishing briefs, reviewing content, processing payouts, communicating with advocates, and producing performance reports.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">The handoff should include a complete operations manual documenting every process step by step. Not a strategic overview. Literal click-by-click procedures for every task. This manual is the insurance policy that protects the program if the internal owner changes roles, goes on leave, or gets pulled into other priorities.</p>
+      <h2 style="margin: 3rem 0 1.25rem; font-family: Fraunces, Georgia, serif; font-size: 1.75rem; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25;">Common operational mistakes</h2>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;">I'll be honest about the basis for this section: Kindling doesn't yet have years of program history behind it. These failure patterns come from three places. Some come from how adjacent categories (influencer programs, gamified advocacy platforms, community programs) visibly fail, which is well documented. Some come from the operational work we've done designing and standing up early programs. And some are predictions from first principles about where the incentives inside a marketing organization will push a program if nobody resists. I'm confident in all of them, and I'll tell you why in each case.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;"><strong style="font-weight: 600;">Slow content review kills momentum.</strong> If an advocate submits content on Monday and doesn't hear back until Thursday, their enthusiasm drops. The 24-hour review SLA is the single most important operational discipline in the program. Every day of review delay reduces the likelihood that the advocate will create a second piece of content.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;"><strong style="font-weight: 600;">Vague briefs produce no content.</strong> A brief that says "write about your experience with our product" gives the advocate nothing to work with. Good briefs give a specific angle, a starting question, and an example of what the output might look like. They reduce the creative burden without constraining the advocate's voice.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;"><strong style="font-weight: 600;">Inconsistent compensation destroys trust.</strong> If payouts are late, unclear, or inconsistent, advocates lose confidence in the program fast. Use a payment processor that handles the mechanics reliably (we use Stripe Connect), and send a line-item breakdown with every payment so advocates know exactly what they earned and why.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;"><strong style="font-weight: 600;">Over-editing advocate content backfires.</strong> The instinct of every marketing team is to polish content until it shines. Resist this. If an advocate's post reads like a marketing team wrote it, you've destroyed the thing that made it valuable. Review for factual accuracy and compliance. Leave the voice alone.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;"><strong style="font-weight: 600;">Treating quiet advocates as a problem.</strong> Some advocates will create content every week. Some will create once a quarter. Some will go silent for months and then produce something exceptional. This is normal. Advocacy is voluntary. The moment you start treating inactivity as a problem to be solved through nudges, reminders, or guilt, you've crossed the line from support into pressure. If overall content volume is low, the issue is usually with the briefs, the compensation, or the onboarding.</p>
+      <p style="margin: 0 0 1.5rem; text-wrap: pretty;"><strong style="font-weight: 600;">Failing to close the loop with sales.</strong> If your sales team doesn't know the advocacy program exists, the pipeline influence you're generating is invisible. Brief the sales team. Show them where to find advocate content. Train them to share it in deal cycles. And create a simple mechanism for them to report when a prospect mentions advocate content. Without this feedback loop, you can't measure the thing that matters most.</p>
+      <div style="margin: 3rem 0; background: #FFFFFF; border: 1px solid #E5E0D8; border-left: 4px solid #E85D04; border-radius: 0 8px 8px 0; padding: 2rem 2.5rem;">
+        <p style="margin: 0 0 1rem; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #E85D04;">Key takeaways</p>
+        <ul style="margin: 0; padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.65rem; font-size: 0.95rem; color: #1A1A1A;">
+          <li>Most advocacy programs fail on operational infrastructure, not on the thesis.</li>
+          <li>Five phases: foundation, recruitment, activation and support, optimization, transition to internal ownership.</li>
+          <li>Recruit from verified, genuinely enthusiastic users — program quality is set at recruitment.</li>
+          <li>Common mistakes: scripting content, under-resourcing the program, and treating it as a campaign instead of an operation.</li>
+        </ul>
+      </div>
+
+      <div style="margin-top: 3rem; padding-top: 2.5rem; border-top: 1px solid #E5E0D8; display: flex; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap;">
+        <a href="Chapter 8 - Amplification.dc.html" style="color: #1A1A1A;" style-hover="color: #E85D04;">
+          <p style="margin: 0 0 0.25rem; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #E85D04;">← Previous</p>
+          <p style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: 1.1rem;">Chapter 8: Amplification</p>
+        </a>
+        <a href="Chapter 10 - The Four Functions.dc.html" style="text-align: right; color: #1A1A1A;" style-hover="color: #E85D04;">
+          <p style="margin: 0 0 0.25rem; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #E85D04;">Next →</p>
+          <p style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: 1.1rem;">Chapter 10: The Four Functions</p>
+        </a>
+      </div>
+
+      <div style="margin-top: 3rem; background: #FFFFFF; border: 1px solid #E5E0D8; border-radius: 8px; padding: 2rem 2.5rem;">
+        <h2 style="margin: 0 0 0.6rem; font-family: Fraunces, Georgia, serif; font-size: 1.25rem; font-weight: 600;">Read the whole book offline</h2>
+        <p style="margin: 0 0 1.5rem; font-size: 0.9rem; color: #5A5A5A; text-wrap: pretty;">Enter your email and we'll send the complete book as a PDF — one email, no newsletter.</p>
+        <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+          <form onSubmit="{{ submitEmail }}" style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <input type="email" required="required" placeholder="you@company.com" value="{{ email }}" onChange="{{ setEmail }}" style="flex: 1; min-width: 200px; background: #FFFFFF; border: 1px solid #E5E0D8; border-radius: 6px; padding: 0.75rem 1rem; font-size: 0.95rem; color: #1A1A1A; font-family: Inter, sans-serif; outline: none; transition: border-color 0.2s, box-shadow 0.2s;" style-focus="border-color: #E85D04; box-shadow: 0 0 0 3px rgba(232,93,4,0.1);">
+            <button type="submit" style="background: #E85D04; color: #FFFFFF; padding: 0.75rem 1.75rem; font-size: 0.95rem; font-weight: 600; border: none; border-radius: 6px; cursor: pointer; font-family: Inter, sans-serif; transition: background 0.2s, transform 0.2s, box-shadow 0.2s;" style-hover="background: #D45200; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(232,93,4,0.3);">Send me the PDF</button>
+          </form>
+        </sc-if>
+        <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+          <p style="margin: 0; font-weight: 600; color: #E85D04; font-size: 0.95rem;">Check your inbox — the PDF is on its way.</p>
+        </sc-if>
+      </div>
+    </article>
+  </div>
+
+  <footer style="margin-top: auto; padding: 3rem 2rem; border-top: 1px solid #E5E0D8;">
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: baseline; gap: 1.5rem; flex-wrap: wrap;">
+      <p style="margin: 0; font-size: 0.8rem; color: #5A5A5A;">© 2026 advocacyledgrowth.com · <em>The Advocacy Operating System</em>, Second Edition</p>
+      <p style="margin: 0; font-size: 0.8rem; color: #5A5A5A;">An educational project by the team at <a href="https://kindlinghq.com" style="color: #5A5A5A; text-decoration: underline;" style-hover="color: #1A1A1A;">Kindling</a></p>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showSidebar&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;}}">
+class Component extends DCLogic {
+  state = { email: '', submitted: false, progress: 0 };
+  componentDidMount() {
+    this.onScroll = () => {
+      const h = document.documentElement;
+      const max = h.scrollHeight - h.clientHeight;
+      this.setState({ progress: max > 0 ? Math.min(100, (h.scrollTop / max) * 100) : 0 });
+    };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+  }
+  componentWillUnmount() { window.removeEventListener('scroll', this.onScroll); }
+  renderVals() {
+    const showSidebar = this.props.showSidebar ?? true;
+    const CURRENT = 9;
+    const entries = [
+      ['Foreword', 'Foreword.dc.html'],
+      ['1 · The Trust Shift', 'Chapter 1 - The Trust Shift.dc.html'],
+      ['2 · How We Got Here', 'Chapter 2 - How We Got Here.dc.html'],
+      ['3 · What Is Advocacy-Led Growth', 'Chapter 3 - What Is Advocacy-Led Growth.dc.html'],
+      ['4 · The Three Pillars', 'Chapter 4 - The Three Pillars.dc.html'],
+      ['5 · The Organic Principle', 'Chapter 5 - The Organic Principle.dc.html'],
+      ['6 · Who Creates the Content', 'Chapter 6 - Who Creates the Content.dc.html'],
+      ['7 · The Economics', 'Chapter 7 - The Economics.dc.html'],
+      ['8 · Amplification', 'Chapter 8 - Amplification.dc.html'],
+      ['9 · Building the System', 'Chapter 9 - Building the System.dc.html'],
+      ['10 · The Four Functions', 'Chapter 10 - The Four Functions.dc.html'],
+      ['11 · Measurement That Matters', 'Chapter 11 - Measurement That Matters.dc.html'],
+      ['12 · ALG Alongside PLG and SLG', 'Chapter 12 - ALG Alongside PLG and SLG.dc.html'],
+      ['13 · The Compounding Effect', 'Chapter 13 - The Compounding Effect.dc.html'],
+      ['13\u00BD · What Goes Wrong', 'Chapter 13.5 - What Goes Wrong.dc.html'],
+      ['14 · Getting Started', 'Chapter 14 - Getting Started.dc.html'],
+      ['15 · The Future of B2B Growth', 'Chapter 15 - The Future of B2B Growth.dc.html'],
+      ['Afterword', 'Afterword.dc.html'],
+      ['Notes', 'Notes.dc.html']
+    ];
+    const toc = showSidebar ? entries.map(([label, href], i) => ({
+      label,
+      href,
+      current: i === CURRENT,
+      linked: i !== CURRENT,
+      upcoming: false
+    })) : [];
+    return {
+      toc,
+      progressPct: this.state.progress.toFixed(1) + '%',
+      email: this.state.email,
+      notSubmitted: !this.state.submitted,
+      submitted: this.state.submitted,
+      setEmail: (e) => this.setState({ email: e.target.value }),
+      submitEmail: (e) => {
+        e.preventDefault();
+        try { localStorage.setItem('alg-pdf-email', this.state.email); } catch (err) {}
+        this.setState({ submitted: true });
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>
