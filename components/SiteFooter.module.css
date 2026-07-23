@@ -1,0 +1,30 @@
+.footer {
+  margin-top: auto;
+  padding: 3rem 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.inner {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.copy,
+.links {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.mutedLink {
+  color: var(--muted);
+  text-decoration: underline;
+}
+
+.mutedLink:hover {
+  color: var(--text);
+}
