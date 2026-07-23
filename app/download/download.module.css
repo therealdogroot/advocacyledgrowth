@@ -1,0 +1,9 @@
+.main {
+  flex: 1;
+  padding: 5rem 2rem;
+}
+
+.inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
