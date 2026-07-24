@@ -15,7 +15,7 @@ export function PdfForm({
   className,
 }: PdfFormProps) {
   const [email, setEmail] = useState("");
-  const [downloadUrl, setDownloadUrl] = useState<string | null>(null);
+  const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [pending, setPending] = useState(false);
 
@@ -29,8 +29,8 @@ export function PdfForm({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),
       });
-      const data = (await res.json()) as { url?: string; error?: string };
-      if (!res.ok || !data.url) {
+      const data = (await res.json()) as { ok?: boolean; error?: string };
+      if (!res.ok || !data.ok) {
         setError(data.error || "Something went wrong. Please try again.");
         setPending(false);
         return;
@@ -40,14 +40,7 @@ export function PdfForm({
       } catch {
         /* ignore */
       }
-      setDownloadUrl(data.url);
-      const a = document.createElement("a");
-      a.href = data.url;
-      a.setAttribute("download", "");
-      a.rel = "noopener";
-      document.body.appendChild(a);
-      a.click();
-      a.remove();
+      setSubmitted(true);
     } catch {
       setError("Something went wrong. Please try again.");
     } finally {
@@ -59,7 +52,7 @@ export function PdfForm({
     <div className={`${styles.card} ${className ?? ""}`}>
       <h2 className={styles.headline}>{headline}</h2>
       <p className={styles.subcopy}>{subcopy}</p>
-      {!downloadUrl ? (
+      {!submitted ? (
         <>
           <form onSubmit={onSubmit} className={styles.form}>
             <input
@@ -80,8 +73,7 @@ export function PdfForm({
         </>
       ) : (
         <p className={styles.success}>
-          Your download is starting. If it doesn&apos;t,{" "}
-          <a href={downloadUrl}>use this link</a>.
+          Check your inbox — the PDF is on its way.
         </p>
       )}
     </div>

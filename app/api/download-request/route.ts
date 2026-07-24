@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
 import { saveLead } from "@/lib/leads";
-import { PDF_PATH } from "@/lib/site";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -27,7 +26,15 @@ export async function POST(request: Request) {
     );
   }
 
-  await saveLead(email);
+  try {
+    await saveLead(email);
+  } catch (err) {
+    console.error("saveLead failed:", err);
+    return NextResponse.json(
+      { error: "Could not send the PDF. Please try again." },
+      { status: 502 },
+    );
+  }
 
-  return NextResponse.json({ url: PDF_PATH });
+  return NextResponse.json({ ok: true });
 }
